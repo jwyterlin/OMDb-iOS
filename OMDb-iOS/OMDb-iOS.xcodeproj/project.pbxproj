@@ -22,8 +22,14 @@
 		7B332A3A1D29832800D76A10 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A391D29832800D76A10 /* Constants.m */; };
 		7B332A3B1D29832800D76A10 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A391D29832800D76A10 /* Constants.m */; };
 		7B332A3F1D29843A00D76A10 /* ConstantTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A3E1D29843A00D76A10 /* ConstantTests.m */; };
-		7B332A451D298CE800D76A10 /* GenericCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A441D298CE800D76A10 /* GenericCell.m */; };
-		7B332A461D298CE800D76A10 /* GenericCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A441D298CE800D76A10 /* GenericCell.m */; };
+		7B332A4A1D298D3900D76A10 /* GenericCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A491D298D3900D76A10 /* GenericCellTests.m */; };
+		7B332A551D2994F400D76A10 /* GenericCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A541D2994F400D76A10 /* GenericCell.m */; };
+		7B332A561D2994F400D76A10 /* GenericCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A541D2994F400D76A10 /* GenericCell.m */; };
+		7B332A5A1D29950400D76A10 /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A581D29950400D76A10 /* MovieCell.m */; };
+		7B332A5B1D29950400D76A10 /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A581D29950400D76A10 /* MovieCell.m */; };
+		7B332A5C1D29950400D76A10 /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B332A591D29950400D76A10 /* MovieCell.xib */; };
+		7B332A5D1D29950400D76A10 /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B332A591D29950400D76A10 /* MovieCell.xib */; };
+		7B332A5F1D29954800D76A10 /* MovieCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A5E1D29954800D76A10 /* MovieCellTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,8 +72,13 @@
 		7B332A381D29832800D76A10 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Util/Constants.h; sourceTree = "<group>"; };
 		7B332A391D29832800D76A10 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = Util/Constants.m; sourceTree = "<group>"; };
 		7B332A3E1D29843A00D76A10 /* ConstantTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstantTests.m; sourceTree = "<group>"; };
-		7B332A431D298CE800D76A10 /* GenericCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GenericCell.h; path = View/UITableViewCell/GenericCell.h; sourceTree = "<group>"; };
-		7B332A441D298CE800D76A10 /* GenericCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GenericCell.m; path = View/UITableViewCell/GenericCell.m; sourceTree = "<group>"; };
+		7B332A491D298D3900D76A10 /* GenericCellTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericCellTests.m; sourceTree = "<group>"; };
+		7B332A531D2994F400D76A10 /* GenericCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GenericCell.h; path = View/UICollectionViewCell/GenericCell.h; sourceTree = "<group>"; };
+		7B332A541D2994F400D76A10 /* GenericCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GenericCell.m; path = View/UICollectionViewCell/GenericCell.m; sourceTree = "<group>"; };
+		7B332A571D29950400D76A10 /* MovieCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MovieCell.h; path = View/UICollectionViewCell/MovieCell.h; sourceTree = "<group>"; };
+		7B332A581D29950400D76A10 /* MovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MovieCell.m; path = View/UICollectionViewCell/MovieCell.m; sourceTree = "<group>"; };
+		7B332A591D29950400D76A10 /* MovieCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MovieCell.xib; path = View/UICollectionViewCell/MovieCell.xib; sourceTree = "<group>"; };
+		7B332A5E1D29954800D76A10 /* MovieCellTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCellTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,12 +129,12 @@
 		7B3329ED1D2968EA00D76A10 /* OMDb-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				7B332A401D298CB300D76A10 /* View */,
 				7B332A211D29696400D76A10 /* AppDelegate */,
 				7B332A221D29697100D76A10 /* Controller */,
 				7B332A241D29699000D76A10 /* Resources */,
 				7B332A231D29697F00D76A10 /* Storyboard */,
 				7B332A371D29831100D76A10 /* Util */,
+				7B332A401D298CB300D76A10 /* View */,
 			);
 			path = "OMDb-iOS";
 			sourceTree = "<group>";
@@ -142,6 +153,7 @@
 				7B332A301D296B5300D76A10 /* Controller */,
 				7B332A0A1D2968EA00D76A10 /* Info.plist */,
 				7B332A3D1D29842300D76A10 /* Util */,
+				7B332A471D298D1B00D76A10 /* View */,
 			);
 			path = "OMDb-iOSTests";
 			sourceTree = "<group>";
@@ -247,26 +259,54 @@
 		7B332A401D298CB300D76A10 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7B332A411D298CB900D76A10 /* UITableViewCell */,
+				7B332A411D298CB900D76A10 /* UICollectionViewCell */,
 			);
 			name = View;
 			sourceTree = "<group>";
 		};
-		7B332A411D298CB900D76A10 /* UITableViewCell */ = {
+		7B332A411D298CB900D76A10 /* UICollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				7B332A421D298CC200D76A10 /* GenericCell */,
+				7B332A4B1D29943300D76A10 /* MovieCell */,
 			);
-			name = UITableViewCell;
+			name = UICollectionViewCell;
 			sourceTree = "<group>";
 		};
 		7B332A421D298CC200D76A10 /* GenericCell */ = {
 			isa = PBXGroup;
 			children = (
-				7B332A431D298CE800D76A10 /* GenericCell.h */,
-				7B332A441D298CE800D76A10 /* GenericCell.m */,
+				7B332A531D2994F400D76A10 /* GenericCell.h */,
+				7B332A541D2994F400D76A10 /* GenericCell.m */,
 			);
 			name = GenericCell;
+			sourceTree = "<group>";
+		};
+		7B332A471D298D1B00D76A10 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7B332A481D298D1F00D76A10 /* UICollectionViewCell */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7B332A481D298D1F00D76A10 /* UICollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				7B332A491D298D3900D76A10 /* GenericCellTests.m */,
+				7B332A5E1D29954800D76A10 /* MovieCellTests.m */,
+			);
+			name = UICollectionViewCell;
+			sourceTree = "<group>";
+		};
+		7B332A4B1D29943300D76A10 /* MovieCell */ = {
+			isa = PBXGroup;
+			children = (
+				7B332A571D29950400D76A10 /* MovieCell.h */,
+				7B332A581D29950400D76A10 /* MovieCell.m */,
+				7B332A591D29950400D76A10 /* MovieCell.xib */,
+			);
+			name = MovieCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,6 +415,7 @@
 				7B3329FE1D2968EA00D76A10 /* LaunchScreen.storyboard in Resources */,
 				7B3329FB1D2968EA00D76A10 /* Assets.xcassets in Resources */,
 				7B3329F91D2968EA00D76A10 /* Main.storyboard in Resources */,
+				7B332A5C1D29950400D76A10 /* MovieCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +423,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B332A5D1D29950400D76A10 /* MovieCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,8 +445,9 @@
 				7B332A271D296A2E00D76A10 /* AppDelegate.m in Sources */,
 				7B332A2A1D296A4000D76A10 /* MoviesViewController.m in Sources */,
 				7B332A2F1D296B4700D76A10 /* GenericViewController.m in Sources */,
+				7B332A551D2994F400D76A10 /* GenericCell.m in Sources */,
+				7B332A5A1D29950400D76A10 /* MovieCell.m in Sources */,
 				7B3329F01D2968EA00D76A10 /* main.m in Sources */,
-				7B332A451D298CE800D76A10 /* GenericCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,10 +456,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B332A3B1D29832800D76A10 /* Constants.m in Sources */,
-				7B332A461D298CE800D76A10 /* GenericCell.m in Sources */,
 				7B332A341D296B8500D76A10 /* MoviesViewControllerTests.m in Sources */,
+				7B332A561D2994F400D76A10 /* GenericCell.m in Sources */,
 				7B332A321D296B7300D76A10 /* GenericViewControllerTests.m in Sources */,
 				7B332A3F1D29843A00D76A10 /* ConstantTests.m in Sources */,
+				7B332A4A1D298D3900D76A10 /* GenericCellTests.m in Sources */,
+				7B332A5F1D29954800D76A10 /* MovieCellTests.m in Sources */,
+				7B332A5B1D29950400D76A10 /* MovieCell.m in Sources */,
 				7B332A361D296BB500D76A10 /* MoviesViewController.m in Sources */,
 				7B332A351D296BB000D76A10 /* GenericViewController.m in Sources */,
 			);
