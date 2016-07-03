@@ -22,6 +22,8 @@
 		7B332A3A1D29832800D76A10 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A391D29832800D76A10 /* Constants.m */; };
 		7B332A3B1D29832800D76A10 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A391D29832800D76A10 /* Constants.m */; };
 		7B332A3F1D29843A00D76A10 /* ConstantTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A3E1D29843A00D76A10 /* ConstantTests.m */; };
+		7B332A451D298CE800D76A10 /* GenericCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A441D298CE800D76A10 /* GenericCell.m */; };
+		7B332A461D298CE800D76A10 /* GenericCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A441D298CE800D76A10 /* GenericCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		7B332A381D29832800D76A10 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Util/Constants.h; sourceTree = "<group>"; };
 		7B332A391D29832800D76A10 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = Util/Constants.m; sourceTree = "<group>"; };
 		7B332A3E1D29843A00D76A10 /* ConstantTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstantTests.m; sourceTree = "<group>"; };
+		7B332A431D298CE800D76A10 /* GenericCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GenericCell.h; path = View/UITableViewCell/GenericCell.h; sourceTree = "<group>"; };
+		7B332A441D298CE800D76A10 /* GenericCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GenericCell.m; path = View/UITableViewCell/GenericCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,7 @@
 		7B3329ED1D2968EA00D76A10 /* OMDb-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				7B332A401D298CB300D76A10 /* View */,
 				7B332A211D29696400D76A10 /* AppDelegate */,
 				7B332A221D29697100D76A10 /* Controller */,
 				7B332A241D29699000D76A10 /* Resources */,
@@ -237,6 +242,31 @@
 				7B332A3E1D29843A00D76A10 /* ConstantTests.m */,
 			);
 			name = Util;
+			sourceTree = "<group>";
+		};
+		7B332A401D298CB300D76A10 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7B332A411D298CB900D76A10 /* UITableViewCell */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		7B332A411D298CB900D76A10 /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				7B332A421D298CC200D76A10 /* GenericCell */,
+			);
+			name = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		7B332A421D298CC200D76A10 /* GenericCell */ = {
+			isa = PBXGroup;
+			children = (
+				7B332A431D298CE800D76A10 /* GenericCell.h */,
+				7B332A441D298CE800D76A10 /* GenericCell.m */,
+			);
+			name = GenericCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,6 +404,7 @@
 				7B332A2A1D296A4000D76A10 /* MoviesViewController.m in Sources */,
 				7B332A2F1D296B4700D76A10 /* GenericViewController.m in Sources */,
 				7B3329F01D2968EA00D76A10 /* main.m in Sources */,
+				7B332A451D298CE800D76A10 /* GenericCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +413,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B332A3B1D29832800D76A10 /* Constants.m in Sources */,
+				7B332A461D298CE800D76A10 /* GenericCell.m in Sources */,
 				7B332A341D296B8500D76A10 /* MoviesViewControllerTests.m in Sources */,
 				7B332A321D296B7300D76A10 /* GenericViewControllerTests.m in Sources */,
 				7B332A3F1D29843A00D76A10 /* ConstantTests.m in Sources */,
