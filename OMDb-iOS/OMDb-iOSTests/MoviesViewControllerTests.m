@@ -41,4 +41,22 @@
     
 }
 
+-(void)testCollectionViewExists {
+    
+    MoviesViewController *moviesViewController = [MoviesViewController new];
+    [moviesViewController viewDidLoad];
+    
+    XCTAssert( moviesViewController.collectionView );
+    
+}
+
+-(void)testMoviesExists {
+    
+    MoviesViewController *moviesViewController = [MoviesViewController new];
+    [moviesViewController viewDidLoad];
+    
+    XCTAssert( moviesViewController.movies );
+    
+}
+
 @end

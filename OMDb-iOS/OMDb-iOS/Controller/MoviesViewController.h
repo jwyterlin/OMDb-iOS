@@ -10,6 +10,10 @@
 
 @interface MoviesViewController : GenericViewController
 
+#ifdef TEST
+@property(nonatomic,strong) UICollectionView *collectionView;
+@property(nonatomic,strong) NSArray *movies;
+#endif
 
 @end
 

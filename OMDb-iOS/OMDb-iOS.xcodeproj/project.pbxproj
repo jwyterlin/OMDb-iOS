@@ -19,6 +19,9 @@
 		7B332A341D296B8500D76A10 /* MoviesViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A331D296B8500D76A10 /* MoviesViewControllerTests.m */; };
 		7B332A351D296BB000D76A10 /* GenericViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A2E1D296B4700D76A10 /* GenericViewController.m */; };
 		7B332A361D296BB500D76A10 /* MoviesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A291D296A4000D76A10 /* MoviesViewController.m */; };
+		7B332A3A1D29832800D76A10 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A391D29832800D76A10 /* Constants.m */; };
+		7B332A3B1D29832800D76A10 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A391D29832800D76A10 /* Constants.m */; };
+		7B332A3F1D29843A00D76A10 /* ConstantTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A3E1D29843A00D76A10 /* ConstantTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		7B332A2E1D296B4700D76A10 /* GenericViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GenericViewController.m; path = Controller/GenericViewController.m; sourceTree = "<group>"; };
 		7B332A311D296B7300D76A10 /* GenericViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericViewControllerTests.m; sourceTree = "<group>"; };
 		7B332A331D296B8500D76A10 /* MoviesViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviesViewControllerTests.m; sourceTree = "<group>"; };
+		7B332A381D29832800D76A10 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Util/Constants.h; sourceTree = "<group>"; };
+		7B332A391D29832800D76A10 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = Util/Constants.m; sourceTree = "<group>"; };
+		7B332A3E1D29843A00D76A10 /* ConstantTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstantTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,7 @@
 				7B332A221D29697100D76A10 /* Controller */,
 				7B332A241D29699000D76A10 /* Resources */,
 				7B332A231D29697F00D76A10 /* Storyboard */,
+				7B332A371D29831100D76A10 /* Util */,
 			);
 			path = "OMDb-iOS";
 			sourceTree = "<group>";
@@ -129,6 +136,7 @@
 			children = (
 				7B332A301D296B5300D76A10 /* Controller */,
 				7B332A0A1D2968EA00D76A10 /* Info.plist */,
+				7B332A3D1D29842300D76A10 /* Util */,
 			);
 			path = "OMDb-iOSTests";
 			sourceTree = "<group>";
@@ -204,6 +212,31 @@
 				7B332A331D296B8500D76A10 /* MoviesViewControllerTests.m */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		7B332A371D29831100D76A10 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				7B332A3C1D29840200D76A10 /* Constants */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		7B332A3C1D29840200D76A10 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				7B332A381D29832800D76A10 /* Constants.h */,
+				7B332A391D29832800D76A10 /* Constants.m */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		7B332A3D1D29842300D76A10 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				7B332A3E1D29843A00D76A10 /* ConstantTests.m */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B332A3A1D29832800D76A10 /* Constants.m in Sources */,
 				7B332A271D296A2E00D76A10 /* AppDelegate.m in Sources */,
 				7B332A2A1D296A4000D76A10 /* MoviesViewController.m in Sources */,
 				7B332A2F1D296B4700D76A10 /* GenericViewController.m in Sources */,
@@ -347,8 +381,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B332A3B1D29832800D76A10 /* Constants.m in Sources */,
 				7B332A341D296B8500D76A10 /* MoviesViewControllerTests.m in Sources */,
 				7B332A321D296B7300D76A10 /* GenericViewControllerTests.m in Sources */,
+				7B332A3F1D29843A00D76A10 /* ConstantTests.m in Sources */,
 				7B332A361D296BB500D76A10 /* MoviesViewController.m in Sources */,
 				7B332A351D296BB000D76A10 /* GenericViewController.m in Sources */,
 			);
@@ -507,6 +543,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"TEST=1",
+				);
 				INFOPLIST_FILE = "OMDb-iOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jhonathanwyterlin.OMDb-iOSTests";
