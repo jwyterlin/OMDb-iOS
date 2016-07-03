@@ -11,10 +11,14 @@
 		7B3329F91D2968EA00D76A10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B3329F71D2968EA00D76A10 /* Main.storyboard */; };
 		7B3329FB1D2968EA00D76A10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B3329FA1D2968EA00D76A10 /* Assets.xcassets */; };
 		7B3329FE1D2968EA00D76A10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B3329FC1D2968EA00D76A10 /* LaunchScreen.storyboard */; };
-		7B332A091D2968EA00D76A10 /* OMDb_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A081D2968EA00D76A10 /* OMDb_iOSTests.m */; };
 		7B332A141D2968EB00D76A10 /* OMDb_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A131D2968EB00D76A10 /* OMDb_iOSUITests.m */; };
 		7B332A271D296A2E00D76A10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A261D296A2E00D76A10 /* AppDelegate.m */; };
-		7B332A2A1D296A4000D76A10 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A291D296A4000D76A10 /* ViewController.m */; };
+		7B332A2A1D296A4000D76A10 /* MoviesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A291D296A4000D76A10 /* MoviesViewController.m */; };
+		7B332A2F1D296B4700D76A10 /* GenericViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A2E1D296B4700D76A10 /* GenericViewController.m */; };
+		7B332A321D296B7300D76A10 /* GenericViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A311D296B7300D76A10 /* GenericViewControllerTests.m */; };
+		7B332A341D296B8500D76A10 /* MoviesViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A331D296B8500D76A10 /* MoviesViewControllerTests.m */; };
+		7B332A351D296BB000D76A10 /* GenericViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A2E1D296B4700D76A10 /* GenericViewController.m */; };
+		7B332A361D296BB500D76A10 /* MoviesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A291D296A4000D76A10 /* MoviesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,15 +46,18 @@
 		7B3329FD1D2968EA00D76A10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B3329FF1D2968EA00D76A10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B332A041D2968EA00D76A10 /* OMDb-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OMDb-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B332A081D2968EA00D76A10 /* OMDb_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OMDb_iOSTests.m; sourceTree = "<group>"; };
 		7B332A0A1D2968EA00D76A10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B332A0F1D2968EB00D76A10 /* OMDb-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OMDb-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B332A131D2968EB00D76A10 /* OMDb_iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OMDb_iOSUITests.m; sourceTree = "<group>"; };
 		7B332A151D2968EB00D76A10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B332A251D296A2E00D76A10 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = AppDelegate/AppDelegate.h; sourceTree = "<group>"; };
 		7B332A261D296A2E00D76A10 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = AppDelegate/AppDelegate.m; sourceTree = "<group>"; };
-		7B332A281D296A4000D76A10 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Controller/ViewController.h; sourceTree = "<group>"; };
-		7B332A291D296A4000D76A10 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Controller/ViewController.m; sourceTree = "<group>"; };
+		7B332A281D296A4000D76A10 /* MoviesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoviesViewController.h; path = Controller/MoviesViewController.h; sourceTree = "<group>"; };
+		7B332A291D296A4000D76A10 /* MoviesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoviesViewController.m; path = Controller/MoviesViewController.m; sourceTree = "<group>"; };
+		7B332A2D1D296B4700D76A10 /* GenericViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GenericViewController.h; path = Controller/GenericViewController.h; sourceTree = "<group>"; };
+		7B332A2E1D296B4700D76A10 /* GenericViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GenericViewController.m; path = Controller/GenericViewController.m; sourceTree = "<group>"; };
+		7B332A311D296B7300D76A10 /* GenericViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericViewControllerTests.m; sourceTree = "<group>"; };
+		7B332A331D296B8500D76A10 /* MoviesViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviesViewControllerTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +127,7 @@
 		7B332A071D2968EA00D76A10 /* OMDb-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				7B332A081D2968EA00D76A10 /* OMDb_iOSTests.m */,
+				7B332A301D296B5300D76A10 /* Controller */,
 				7B332A0A1D2968EA00D76A10 /* Info.plist */,
 			);
 			path = "OMDb-iOSTests";
@@ -147,8 +154,8 @@
 		7B332A221D29697100D76A10 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7B332A281D296A4000D76A10 /* ViewController.h */,
-				7B332A291D296A4000D76A10 /* ViewController.m */,
+				7B332A2C1D296B2C00D76A10 /* GenericViewController */,
+				7B332A2B1D296B2000D76A10 /* MoviesViewController */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -170,6 +177,33 @@
 				7B3329EE1D2968EA00D76A10 /* Supporting Files */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		7B332A2B1D296B2000D76A10 /* MoviesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7B332A281D296A4000D76A10 /* MoviesViewController.h */,
+				7B332A291D296A4000D76A10 /* MoviesViewController.m */,
+			);
+			name = MoviesViewController;
+			sourceTree = "<group>";
+		};
+		7B332A2C1D296B2C00D76A10 /* GenericViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7B332A2D1D296B4700D76A10 /* GenericViewController.h */,
+				7B332A2E1D296B4700D76A10 /* GenericViewController.m */,
+			);
+			name = GenericViewController;
+			sourceTree = "<group>";
+		};
+		7B332A301D296B5300D76A10 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7B332A311D296B7300D76A10 /* GenericViewControllerTests.m */,
+				7B332A331D296B8500D76A10 /* MoviesViewControllerTests.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,7 +337,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B332A271D296A2E00D76A10 /* AppDelegate.m in Sources */,
-				7B332A2A1D296A4000D76A10 /* ViewController.m in Sources */,
+				7B332A2A1D296A4000D76A10 /* MoviesViewController.m in Sources */,
+				7B332A2F1D296B4700D76A10 /* GenericViewController.m in Sources */,
 				7B3329F01D2968EA00D76A10 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,7 +347,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B332A091D2968EA00D76A10 /* OMDb_iOSTests.m in Sources */,
+				7B332A341D296B8500D76A10 /* MoviesViewControllerTests.m in Sources */,
+				7B332A321D296B7300D76A10 /* GenericViewControllerTests.m in Sources */,
+				7B332A361D296BB500D76A10 /* MoviesViewController.m in Sources */,
+				7B332A351D296BB000D76A10 /* GenericViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
