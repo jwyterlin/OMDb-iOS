@@ -8,6 +8,9 @@
 
 #import "MoviesViewController.h"
 
+// Cell
+#import "MovieCell.h"
+
 @interface MoviesViewController()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 
 #ifndef TEST
@@ -47,7 +50,7 @@
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    return [UICollectionViewCell new];
+    return [MovieCell new];
     
 }
 

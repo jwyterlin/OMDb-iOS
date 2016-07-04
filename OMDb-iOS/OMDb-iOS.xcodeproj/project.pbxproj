@@ -30,6 +30,12 @@
 		7B332A5C1D29950400D76A10 /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B332A591D29950400D76A10 /* MovieCell.xib */; };
 		7B332A5D1D29950400D76A10 /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B332A591D29950400D76A10 /* MovieCell.xib */; };
 		7B332A5F1D29954800D76A10 /* MovieCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A5E1D29954800D76A10 /* MovieCellTests.m */; };
+		7B332A651D29A1EA00D76A10 /* GenericModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A641D29A1EA00D76A10 /* GenericModel.m */; };
+		7B332A661D29A1EA00D76A10 /* GenericModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A641D29A1EA00D76A10 /* GenericModel.m */; };
+		7B332A691D29A20100D76A10 /* MovieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A681D29A20100D76A10 /* MovieModel.m */; };
+		7B332A6A1D29A20100D76A10 /* MovieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A681D29A20100D76A10 /* MovieModel.m */; };
+		7B332A6D1D29A22100D76A10 /* GenericModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A6C1D29A22100D76A10 /* GenericModelTests.m */; };
+		7B332A6F1D29A22B00D76A10 /* MovieModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A6E1D29A22B00D76A10 /* MovieModelTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +85,12 @@
 		7B332A581D29950400D76A10 /* MovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MovieCell.m; path = View/UICollectionViewCell/MovieCell.m; sourceTree = "<group>"; };
 		7B332A591D29950400D76A10 /* MovieCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MovieCell.xib; path = View/UICollectionViewCell/MovieCell.xib; sourceTree = "<group>"; };
 		7B332A5E1D29954800D76A10 /* MovieCellTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCellTests.m; sourceTree = "<group>"; };
+		7B332A631D29A1EA00D76A10 /* GenericModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GenericModel.h; path = Model/GenericModel.h; sourceTree = "<group>"; };
+		7B332A641D29A1EA00D76A10 /* GenericModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GenericModel.m; path = Model/GenericModel.m; sourceTree = "<group>"; };
+		7B332A671D29A20100D76A10 /* MovieModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MovieModel.h; path = Model/MovieModel.h; sourceTree = "<group>"; };
+		7B332A681D29A20100D76A10 /* MovieModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MovieModel.m; path = Model/MovieModel.m; sourceTree = "<group>"; };
+		7B332A6C1D29A22100D76A10 /* GenericModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericModelTests.m; sourceTree = "<group>"; };
+		7B332A6E1D29A22B00D76A10 /* MovieModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieModelTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +141,7 @@
 		7B3329ED1D2968EA00D76A10 /* OMDb-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				7B332A601D29A1C400D76A10 /* Model */,
 				7B332A211D29696400D76A10 /* AppDelegate */,
 				7B332A221D29697100D76A10 /* Controller */,
 				7B332A241D29699000D76A10 /* Resources */,
@@ -152,6 +165,7 @@
 			children = (
 				7B332A301D296B5300D76A10 /* Controller */,
 				7B332A0A1D2968EA00D76A10 /* Info.plist */,
+				7B332A6B1D29A21000D76A10 /* Model */,
 				7B332A3D1D29842300D76A10 /* Util */,
 				7B332A471D298D1B00D76A10 /* View */,
 			);
@@ -309,6 +323,42 @@
 			name = MovieCell;
 			sourceTree = "<group>";
 		};
+		7B332A601D29A1C400D76A10 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7B332A621D29A1D200D76A10 /* GenericModel */,
+				7B332A611D29A1C900D76A10 /* MovieModel */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7B332A611D29A1C900D76A10 /* MovieModel */ = {
+			isa = PBXGroup;
+			children = (
+				7B332A671D29A20100D76A10 /* MovieModel.h */,
+				7B332A681D29A20100D76A10 /* MovieModel.m */,
+			);
+			name = MovieModel;
+			sourceTree = "<group>";
+		};
+		7B332A621D29A1D200D76A10 /* GenericModel */ = {
+			isa = PBXGroup;
+			children = (
+				7B332A631D29A1EA00D76A10 /* GenericModel.h */,
+				7B332A641D29A1EA00D76A10 /* GenericModel.m */,
+			);
+			name = GenericModel;
+			sourceTree = "<group>";
+		};
+		7B332A6B1D29A21000D76A10 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7B332A6C1D29A22100D76A10 /* GenericModelTests.m */,
+				7B332A6E1D29A22B00D76A10 /* MovieModelTests.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -445,9 +495,11 @@
 				7B332A271D296A2E00D76A10 /* AppDelegate.m in Sources */,
 				7B332A2A1D296A4000D76A10 /* MoviesViewController.m in Sources */,
 				7B332A2F1D296B4700D76A10 /* GenericViewController.m in Sources */,
+				7B332A691D29A20100D76A10 /* MovieModel.m in Sources */,
 				7B332A551D2994F400D76A10 /* GenericCell.m in Sources */,
 				7B332A5A1D29950400D76A10 /* MovieCell.m in Sources */,
 				7B3329F01D2968EA00D76A10 /* main.m in Sources */,
+				7B332A651D29A1EA00D76A10 /* GenericModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,14 +508,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B332A3B1D29832800D76A10 /* Constants.m in Sources */,
+				7B332A661D29A1EA00D76A10 /* GenericModel.m in Sources */,
+				7B332A6F1D29A22B00D76A10 /* MovieModelTests.m in Sources */,
 				7B332A341D296B8500D76A10 /* MoviesViewControllerTests.m in Sources */,
 				7B332A561D2994F400D76A10 /* GenericCell.m in Sources */,
+				7B332A6A1D29A20100D76A10 /* MovieModel.m in Sources */,
 				7B332A321D296B7300D76A10 /* GenericViewControllerTests.m in Sources */,
 				7B332A3F1D29843A00D76A10 /* ConstantTests.m in Sources */,
 				7B332A4A1D298D3900D76A10 /* GenericCellTests.m in Sources */,
 				7B332A5F1D29954800D76A10 /* MovieCellTests.m in Sources */,
 				7B332A5B1D29950400D76A10 /* MovieCell.m in Sources */,
 				7B332A361D296BB500D76A10 /* MoviesViewController.m in Sources */,
+				7B332A6D1D29A22100D76A10 /* GenericModelTests.m in Sources */,
 				7B332A351D296BB000D76A10 /* GenericViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -686,6 +742,7 @@
 				7B332A1A1D2968EB00D76A10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B332A1B1D2968EB00D76A10 /* Build configuration list for PBXNativeTarget "OMDb-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -694,6 +751,7 @@
 				7B332A1D1D2968EB00D76A10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B332A1E1D2968EB00D76A10 /* Build configuration list for PBXNativeTarget "OMDb-iOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -702,6 +760,7 @@
 				7B332A201D2968EB00D76A10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,6 +8,13 @@
 
 #import "MovieCell.h"
 
+@interface MovieCell()
+
+@property(nonatomic,strong) IBOutlet UIImageView *poster;
+@property(nonatomic,strong) IBOutlet UILabel *name;
+
+@end
+
 @implementation MovieCell
 
 
