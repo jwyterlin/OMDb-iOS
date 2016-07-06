@@ -37,6 +37,15 @@
 		7B332A6A1D29A20100D76A10 /* MovieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A681D29A20100D76A10 /* MovieModel.m */; };
 		7B332A6D1D29A22100D76A10 /* GenericModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A6C1D29A22100D76A10 /* GenericModelTests.m */; };
 		7B332A6F1D29A22B00D76A10 /* MovieModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A6E1D29A22B00D76A10 /* MovieModelTests.m */; };
+		7BCD45E01D2C9101004EF134 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCD45DF1D2C9101004EF134 /* Connection.m */; };
+		7BCD45E11D2C9101004EF134 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCD45DF1D2C9101004EF134 /* Connection.m */; };
+		7BCD45E21D2C9101004EF134 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCD45DF1D2C9101004EF134 /* Connection.m */; };
+		7BCD45E61D2C913D004EF134 /* NetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCD45E51D2C913D004EF134 /* NetAPIClient.m */; };
+		7BCD45E71D2C913D004EF134 /* NetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCD45E51D2C913D004EF134 /* NetAPIClient.m */; };
+		7BCD45E81D2C913D004EF134 /* NetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCD45E51D2C913D004EF134 /* NetAPIClient.m */; };
+		7BCD45EC1D2C91E1004EF134 /* Routes.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCD45EB1D2C91E1004EF134 /* Routes.m */; };
+		7BCD45ED1D2C91E1004EF134 /* Routes.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCD45EB1D2C91E1004EF134 /* Routes.m */; };
+		7BCD45EE1D2C91E1004EF134 /* Routes.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCD45EB1D2C91E1004EF134 /* Routes.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +103,12 @@
 		7B332A681D29A20100D76A10 /* MovieModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MovieModel.m; path = Model/MovieModel.m; sourceTree = "<group>"; };
 		7B332A6C1D29A22100D76A10 /* GenericModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericModelTests.m; sourceTree = "<group>"; };
 		7B332A6E1D29A22B00D76A10 /* MovieModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieModelTests.m; sourceTree = "<group>"; };
+		7BCD45DE1D2C9101004EF134 /* Connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Connection.h; path = Util/Connection.h; sourceTree = "<group>"; };
+		7BCD45DF1D2C9101004EF134 /* Connection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Connection.m; path = Util/Connection.m; sourceTree = "<group>"; };
+		7BCD45E41D2C913D004EF134 /* NetAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetAPIClient.h; path = Util/NetAPIClient.h; sourceTree = "<group>"; };
+		7BCD45E51D2C913D004EF134 /* NetAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetAPIClient.m; path = Util/NetAPIClient.m; sourceTree = "<group>"; };
+		7BCD45EA1D2C91E1004EF134 /* Routes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Routes.h; path = Util/Routes.h; sourceTree = "<group>"; };
+		7BCD45EB1D2C91E1004EF134 /* Routes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Routes.m; path = Util/Routes.m; sourceTree = "<group>"; };
 		EE6D37A857FAB1554E370F21 /* libPods-OMDb-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OMDb-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -264,7 +279,10 @@
 		7B332A371D29831100D76A10 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				7BCD45DD1D2C90E9004EF134 /* Connection */,
 				7B332A3C1D29840200D76A10 /* Constants */,
+				7BCD45E31D2C9122004EF134 /* NetAPIClient */,
+				7BCD45E91D2C91D2004EF134 /* Routes */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -373,6 +391,33 @@
 				7B332A6E1D29A22B00D76A10 /* MovieModelTests.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		7BCD45DD1D2C90E9004EF134 /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				7BCD45DE1D2C9101004EF134 /* Connection.h */,
+				7BCD45DF1D2C9101004EF134 /* Connection.m */,
+			);
+			name = Connection;
+			sourceTree = "<group>";
+		};
+		7BCD45E31D2C9122004EF134 /* NetAPIClient */ = {
+			isa = PBXGroup;
+			children = (
+				7BCD45E41D2C913D004EF134 /* NetAPIClient.h */,
+				7BCD45E51D2C913D004EF134 /* NetAPIClient.m */,
+			);
+			name = NetAPIClient;
+			sourceTree = "<group>";
+		};
+		7BCD45E91D2C91D2004EF134 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				7BCD45EA1D2C91E1004EF134 /* Routes.h */,
+				7BCD45EB1D2C91E1004EF134 /* Routes.m */,
+			);
+			name = Routes;
 			sourceTree = "<group>";
 		};
 		C245FEA1C5B3A4182033BAB9 /* Frameworks */ = {
@@ -573,8 +618,11 @@
 				7B332A691D29A20100D76A10 /* MovieModel.m in Sources */,
 				7B332A551D2994F400D76A10 /* GenericCell.m in Sources */,
 				7B332A5A1D29950400D76A10 /* MovieCell.m in Sources */,
+				7BCD45E61D2C913D004EF134 /* NetAPIClient.m in Sources */,
 				7B3329F01D2968EA00D76A10 /* main.m in Sources */,
+				7BCD45EC1D2C91E1004EF134 /* Routes.m in Sources */,
 				7B332A651D29A1EA00D76A10 /* GenericModel.m in Sources */,
+				7BCD45E01D2C9101004EF134 /* Connection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,14 +636,17 @@
 				7B332A341D296B8500D76A10 /* MoviesViewControllerTests.m in Sources */,
 				7B332A561D2994F400D76A10 /* GenericCell.m in Sources */,
 				7B332A6A1D29A20100D76A10 /* MovieModel.m in Sources */,
+				7BCD45ED1D2C91E1004EF134 /* Routes.m in Sources */,
 				7B332A321D296B7300D76A10 /* GenericViewControllerTests.m in Sources */,
 				7B332A3F1D29843A00D76A10 /* ConstantTests.m in Sources */,
 				7B332A4A1D298D3900D76A10 /* GenericCellTests.m in Sources */,
+				7BCD45E71D2C913D004EF134 /* NetAPIClient.m in Sources */,
 				7B332A5F1D29954800D76A10 /* MovieCellTests.m in Sources */,
 				7B332A5B1D29950400D76A10 /* MovieCell.m in Sources */,
 				7B332A361D296BB500D76A10 /* MoviesViewController.m in Sources */,
 				7B332A6D1D29A22100D76A10 /* GenericModelTests.m in Sources */,
 				7B332A351D296BB000D76A10 /* GenericViewController.m in Sources */,
+				7BCD45E11D2C9101004EF134 /* Connection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,6 +655,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B332A141D2968EB00D76A10 /* OMDb_iOSUITests.m in Sources */,
+				7BCD45EE1D2C91E1004EF134 /* Routes.m in Sources */,
+				7BCD45E21D2C9101004EF134 /* Connection.m in Sources */,
+				7BCD45E81D2C913D004EF134 /* NetAPIClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
