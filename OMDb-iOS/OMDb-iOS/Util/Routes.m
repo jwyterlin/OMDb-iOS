@@ -10,27 +10,27 @@
 
 @implementation Routes
 
+// Send all data requests to:
+// http://www.omdbapi.com/?
+
+// Poster API requests:
+// http://img.omdbapi.com/?apikey=[yourkey]&
+
 +(NSString *)API_TOKEN {
     
     return @"48cfc049";
     
 }
 
-+(NSString *)BASE_URL {
-    
-    // Send all data requests to:
-    // http://www.omdbapi.com/?
-    
-    // Poster API requests:
-    // http://img.omdbapi.com/?apikey=[yourkey]&
++(NSString *)BASE_URL_API_GET {
     
     return @"http://www.omdbapi.com/";
     
 }
 
-+(NSString *)BASE_URL_API {
++(NSString *)BASE_URL_API_POST {
     
-    return [NSString stringWithFormat:@"%@",[Routes BASE_URL]];
+    return @"http://img.omdbapi.com/";
     
 }
 

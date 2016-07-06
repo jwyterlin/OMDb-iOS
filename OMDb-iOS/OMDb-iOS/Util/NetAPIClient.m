@@ -12,19 +12,36 @@
 
 @implementation NetAPIClient
 
-+(instancetype)sharedClient {
++(instancetype)sharedClientGet {
     
-    static NetAPIClient *_sharedClient = nil;
+    static NetAPIClient *_sharedClientGet = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         
-        _sharedClient = [[NetAPIClient alloc] initWithBaseURL:[NSURL URLWithString:[Routes BASE_URL_API]]];
-        _sharedClient.responseSerializer = [AFJSONResponseSerializer serializer];
-        _sharedClient.requestSerializer = [AFHTTPRequestSerializer serializer];
+        _sharedClientGet = [[NetAPIClient alloc] initWithBaseURL:[NSURL URLWithString:[Routes BASE_URL_API_GET]]];
+        _sharedClientGet.responseSerializer = [AFJSONResponseSerializer serializer];
+        _sharedClientGet.requestSerializer = [AFHTTPRequestSerializer serializer];
         
     });
     
-    return _sharedClient;
+    return _sharedClientGet;
+    
+}
+
++(instancetype)sharedClientPost {
+    
+    static NetAPIClient *_sharedClientPost = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        
+        _sharedClientPost = [[NetAPIClient alloc] initWithBaseURL:[NSURL URLWithString:[Routes BASE_URL_API_POST]]];
+        _sharedClientPost.responseSerializer = [AFJSONResponseSerializer serializer];
+        _sharedClientPost.requestSerializer = [AFHTTPRequestSerializer serializer];
+        
+    });
+    
+    return _sharedClientPost;
+    
 }
 
 @end

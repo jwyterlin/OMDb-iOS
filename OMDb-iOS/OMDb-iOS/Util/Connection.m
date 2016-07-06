@@ -53,19 +53,29 @@
     
     // Set RequestSerializer
     if ( requestSerializer == RequestSerializerHTTP ) {
-        [[NetAPIClient sharedClient] setRequestSerializer:[AFHTTPRequestSerializer serializer]];
+        
+        if ( method == RequestMethodGet ) {
+            [[NetAPIClient sharedClientGet] setRequestSerializer:[AFHTTPRequestSerializer serializer]];
+        } else if ( method == RequestMethodPost ) {
+            [[NetAPIClient sharedClientPost] setRequestSerializer:[AFHTTPRequestSerializer serializer]];
+        }
+        
     } else {
-        [[NetAPIClient sharedClient] setRequestSerializer:[AFJSONRequestSerializer serializer]];
+        
+        if ( method == RequestMethodGet ) {
+            [[NetAPIClient sharedClientGet] setRequestSerializer:[AFJSONRequestSerializer serializer]];
+        } else if ( method == RequestMethodPost ) {
+            [[NetAPIClient sharedClientPost] setRequestSerializer:[AFJSONRequestSerializer serializer]];
+        }
+        
     }
     
-//    [[NetAPIClient sharedClient].requestSerializer setValue:@"value" forHTTPHeaderField:@"key"];
-
-    NSLog( @"url: %@%@",[[NetAPIClient sharedClient] baseURL], url );
-    
     if ( method == RequestMethodGet ) {
+    
+        NSLog( @"url: %@%@",[[NetAPIClient sharedClientGet] baseURL], url );
         
         // Sents the GET to server and capture response object, giving back callbacks to consumer.
-        [[NetAPIClient sharedClient] GET:url parameters:parameters progress:nil success:^(NSURLSessionTask *task, id responseObject) {
+        [[NetAPIClient sharedClientGet] GET:url parameters:parameters progress:nil success:^(NSURLSessionTask *task, id responseObject) {
             if (success)
                 success(responseObject);
         } failure:^(NSURLSessionTask *operation, NSError *error) {
@@ -75,33 +85,13 @@
         
     } else if ( method == RequestMethodPost ) {
         
+        NSLog( @"url: %@%@",[[NetAPIClient sharedClientPost] baseURL], url );
+        
         // Sents the POST to server and capture response object, giving back callbacks to consumer.
-        [[NetAPIClient sharedClient] POST:url parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        [[NetAPIClient sharedClientPost] POST:url parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             if (success)
                 success(responseObject);
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-            if (failure)
-                failure(NO, error);
-        }];
-        
-    } else if ( method == RequestMethodDelete ) {
-        
-        // Sents the DELETE to server and capture response object, giving back callbacks to consumer.
-        [[NetAPIClient sharedClient] DELETE:url parameters:parameters success:^(NSURLSessionDataTask *task, id responseObject) {
-            if (success)
-                success(responseObject);
-        } failure:^(NSURLSessionDataTask *task, NSError *error) {
-            if (failure)
-                failure(NO, error);
-        }];
-        
-    } else if ( method == RequestMethodPut ) {
-        
-        // Sents the PUT to server and capture response object, giving back callbacks to consumer.
-        [[NetAPIClient sharedClient] PUT:url parameters:parameters success:^(NSURLSessionDataTask *task, id responseObject) {
-            if (success)
-                success(responseObject);
-        } failure:^(NSURLSessionDataTask *task, NSError *error) {
             if (failure)
                 failure(NO, error);
         }];

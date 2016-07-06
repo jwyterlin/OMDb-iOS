@@ -10,8 +10,10 @@
 
 @interface Routes : NSObject
 
-+(NSString *)BASE_URL;
-+(NSString *)BASE_URL_API;
++(NSString *)API_TOKEN;
+
++(NSString *)BASE_URL_API_GET;
++(NSString *)BASE_URL_API_POST;
 
 +(NSString *)WS_SOME;
 

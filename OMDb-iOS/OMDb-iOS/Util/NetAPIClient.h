@@ -12,6 +12,7 @@
 
 @interface NetAPIClient : AFHTTPSessionManager
 
-+(instancetype)sharedClient;
++(instancetype)sharedClientGet;
++(instancetype)sharedClientPost;
 
 @end
