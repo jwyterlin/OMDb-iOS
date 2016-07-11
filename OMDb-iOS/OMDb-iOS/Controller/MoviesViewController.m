@@ -11,6 +11,9 @@
 // Cell
 #import "MovieCell.h"
 
+// Service
+#import "MovieService.h"
+
 @interface MoviesViewController()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 
 #ifndef TEST
@@ -29,6 +32,12 @@
     [super viewDidLoad];
     
     [self setupCollectionView];
+    
+    [[MovieService new] searchMovieWithTitle:@"The" success:^(NSArray<MovieModel *> *movies) {
+        
+    } failure:^(BOOL hasNoConnection, NSError *error) {
+        
+    }];
     
 }
 

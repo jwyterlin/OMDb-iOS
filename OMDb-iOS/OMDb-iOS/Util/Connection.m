@@ -121,13 +121,15 @@
 
 -(BOOL)isNetworkReachable {
     
-    [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
-        NSLog( @"Reachability: %@", AFStringFromNetworkReachabilityStatus( status ) );
-    }];
+    return YES;
     
-    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
-    
-    return [[AFNetworkReachabilityManager sharedManager] isReachable];
+//    [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+//        NSLog( @"Reachability: %@", AFStringFromNetworkReachabilityStatus( status ) );
+//    }];
+//    
+//    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+//    
+//    return [[AFNetworkReachabilityManager sharedManager] isReachable];
     
 }
 

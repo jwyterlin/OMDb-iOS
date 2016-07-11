@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		07E60EA1B006B04E77DCDFDC /* libPods-OMDb-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE6D37A857FAB1554E370F21 /* libPods-OMDb-iOS.a */; };
+		7B05C2311D33E055000ADE2B /* GenericService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B05C2301D33E055000ADE2B /* GenericService.m */; };
+		7B05C2321D33E055000ADE2B /* GenericService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B05C2301D33E055000ADE2B /* GenericService.m */; };
+		7B05C2331D33E055000ADE2B /* GenericService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B05C2301D33E055000ADE2B /* GenericService.m */; };
+		7B05C2371D33E071000ADE2B /* MovieService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B05C2361D33E071000ADE2B /* MovieService.m */; };
+		7B05C2381D33E071000ADE2B /* MovieService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B05C2361D33E071000ADE2B /* MovieService.m */; };
+		7B05C2391D33E071000ADE2B /* MovieService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B05C2361D33E071000ADE2B /* MovieService.m */; };
+		7B05C23D1D33EA08000ADE2B /* Validator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B05C23C1D33EA08000ADE2B /* Validator.m */; };
+		7B05C23E1D33EA08000ADE2B /* Validator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B05C23C1D33EA08000ADE2B /* Validator.m */; };
+		7B05C23F1D33EA08000ADE2B /* Validator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B05C23C1D33EA08000ADE2B /* Validator.m */; };
 		7B3329F01D2968EA00D76A10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B3329EF1D2968EA00D76A10 /* main.m */; };
 		7B3329F91D2968EA00D76A10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B3329F71D2968EA00D76A10 /* Main.storyboard */; };
 		7B3329FB1D2968EA00D76A10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B3329FA1D2968EA00D76A10 /* Assets.xcassets */; };
@@ -68,6 +77,12 @@
 /* Begin PBXFileReference section */
 		3ABE352B526BE72DE4C4E9F7 /* Pods-OMDb-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OMDb-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-OMDb-iOS/Pods-OMDb-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		5CB77CD21EE1547A82DFE4F8 /* Pods-OMDb-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OMDb-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OMDb-iOS/Pods-OMDb-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		7B05C22F1D33E055000ADE2B /* GenericService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GenericService.h; path = Service/GenericService.h; sourceTree = "<group>"; };
+		7B05C2301D33E055000ADE2B /* GenericService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GenericService.m; path = Service/GenericService.m; sourceTree = "<group>"; };
+		7B05C2351D33E071000ADE2B /* MovieService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MovieService.h; path = Service/MovieService.h; sourceTree = "<group>"; };
+		7B05C2361D33E071000ADE2B /* MovieService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MovieService.m; path = Service/MovieService.m; sourceTree = "<group>"; };
+		7B05C23B1D33EA08000ADE2B /* Validator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Validator.h; path = Util/Validator.h; sourceTree = "<group>"; };
+		7B05C23C1D33EA08000ADE2B /* Validator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Validator.m; path = Util/Validator.m; sourceTree = "<group>"; };
 		7B3329EB1D2968EA00D76A10 /* OMDb-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OMDb-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B3329EF1D2968EA00D76A10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7B3329F81D2968EA00D76A10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -147,6 +162,42 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		7B05C22D1D33E018000ADE2B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7B05C22E1D33E031000ADE2B /* GenericService */,
+				7B05C2341D33E05A000ADE2B /* MovieService */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		7B05C22E1D33E031000ADE2B /* GenericService */ = {
+			isa = PBXGroup;
+			children = (
+				7B05C22F1D33E055000ADE2B /* GenericService.h */,
+				7B05C2301D33E055000ADE2B /* GenericService.m */,
+			);
+			name = GenericService;
+			sourceTree = "<group>";
+		};
+		7B05C2341D33E05A000ADE2B /* MovieService */ = {
+			isa = PBXGroup;
+			children = (
+				7B05C2351D33E071000ADE2B /* MovieService.h */,
+				7B05C2361D33E071000ADE2B /* MovieService.m */,
+			);
+			name = MovieService;
+			sourceTree = "<group>";
+		};
+		7B05C23A1D33E9F6000ADE2B /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				7B05C23B1D33EA08000ADE2B /* Validator.h */,
+				7B05C23C1D33EA08000ADE2B /* Validator.m */,
+			);
+			name = Validator;
+			sourceTree = "<group>";
+		};
 		7B3329E21D2968EA00D76A10 = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +227,7 @@
 				7B332A221D29697100D76A10 /* Controller */,
 				7B332A601D29A1C400D76A10 /* Model */,
 				7B332A241D29699000D76A10 /* Resources */,
+				7B05C22D1D33E018000ADE2B /* Service */,
 				7B332A231D29697F00D76A10 /* Storyboard */,
 				7B332A371D29831100D76A10 /* Util */,
 				7B332A401D298CB300D76A10 /* View */,
@@ -283,6 +335,7 @@
 				7B332A3C1D29840200D76A10 /* Constants */,
 				7BCD45E31D2C9122004EF134 /* NetAPIClient */,
 				7BCD45E91D2C91D2004EF134 /* Routes */,
+				7B05C23A1D33E9F6000ADE2B /* Validator */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -614,10 +667,13 @@
 				7B332A3A1D29832800D76A10 /* Constants.m in Sources */,
 				7B332A271D296A2E00D76A10 /* AppDelegate.m in Sources */,
 				7B332A2A1D296A4000D76A10 /* MoviesViewController.m in Sources */,
+				7B05C2311D33E055000ADE2B /* GenericService.m in Sources */,
 				7B332A2F1D296B4700D76A10 /* GenericViewController.m in Sources */,
 				7B332A691D29A20100D76A10 /* MovieModel.m in Sources */,
 				7B332A551D2994F400D76A10 /* GenericCell.m in Sources */,
+				7B05C23D1D33EA08000ADE2B /* Validator.m in Sources */,
 				7B332A5A1D29950400D76A10 /* MovieCell.m in Sources */,
+				7B05C2371D33E071000ADE2B /* MovieService.m in Sources */,
 				7BCD45E61D2C913D004EF134 /* NetAPIClient.m in Sources */,
 				7B3329F01D2968EA00D76A10 /* main.m in Sources */,
 				7BCD45EC1D2C91E1004EF134 /* Routes.m in Sources */,
@@ -639,12 +695,15 @@
 				7BCD45ED1D2C91E1004EF134 /* Routes.m in Sources */,
 				7B332A321D296B7300D76A10 /* GenericViewControllerTests.m in Sources */,
 				7B332A3F1D29843A00D76A10 /* ConstantTests.m in Sources */,
+				7B05C2381D33E071000ADE2B /* MovieService.m in Sources */,
 				7B332A4A1D298D3900D76A10 /* GenericCellTests.m in Sources */,
 				7BCD45E71D2C913D004EF134 /* NetAPIClient.m in Sources */,
+				7B05C23E1D33EA08000ADE2B /* Validator.m in Sources */,
 				7B332A5F1D29954800D76A10 /* MovieCellTests.m in Sources */,
 				7B332A5B1D29950400D76A10 /* MovieCell.m in Sources */,
 				7B332A361D296BB500D76A10 /* MoviesViewController.m in Sources */,
 				7B332A6D1D29A22100D76A10 /* GenericModelTests.m in Sources */,
+				7B05C2321D33E055000ADE2B /* GenericService.m in Sources */,
 				7B332A351D296BB000D76A10 /* GenericViewController.m in Sources */,
 				7BCD45E11D2C9101004EF134 /* Connection.m in Sources */,
 			);
@@ -655,8 +714,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B332A141D2968EB00D76A10 /* OMDb_iOSUITests.m in Sources */,
+				7B05C23F1D33EA08000ADE2B /* Validator.m in Sources */,
 				7BCD45EE1D2C91E1004EF134 /* Routes.m in Sources */,
 				7BCD45E21D2C9101004EF134 /* Connection.m in Sources */,
+				7B05C2331D33E055000ADE2B /* GenericService.m in Sources */,
+				7B05C2391D33E071000ADE2B /* MovieService.m in Sources */,
 				7BCD45E81D2C913D004EF134 /* NetAPIClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

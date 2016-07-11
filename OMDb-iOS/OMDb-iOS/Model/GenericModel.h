@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+// Util
+#import "Constants.h"
+#import "Validator.h"
+
 @interface GenericModel : NSObject
+
+-(NSArray *)setupListWithJson:(NSArray *)list;
+-(id)setupWithJson:(NSDictionary *)json;
 
 @end
