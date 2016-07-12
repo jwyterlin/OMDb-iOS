@@ -50,4 +50,9 @@ NSString *const kOMDBParameterAPIVersion = @"v";
 NSString *const kOMDBParameterSearchByTerm = @"s";
 NSString *const kOMDBParameterSearchPage = @"page";
 
+// Result Keys
+NSString *const kSearch = @"Search";
+NSString *const kResponse = @"Response";
+NSString *const kError = @"Error";
+
 @end

@@ -50,4 +50,9 @@ extern NSString *const kOMDBParameterAPIVersion;
 extern NSString *const kOMDBParameterSearchByTerm;
 extern NSString *const kOMDBParameterSearchPage;
 
+// Result Keys
+extern NSString *const kSearch;
+extern NSString *const kResponse;
+extern NSString *const kError;
+
 @end

@@ -122,19 +122,47 @@
         if ( test )
             test( responseData, nil );
         
-        NSArray *result = (NSArray *)responseData;
-        
-        if ( result.count == 0 ) {
-            if ( success ) {
-                success( nil );
+        if ( responseData[kResponse] ) {
+            
+            BOOL response = [responseData[kResponse] boolValue];
+            
+            if ( response ) {
+                
+                if ( [responseData count] == 0 ) {
+                    if ( success )
+                        success( nil );
+                    return;
+                }
+                
+                if ( responseData[kSearch] ) {
+                    
+                    NSArray *searchList = responseData[kSearch];
+                    
+                    NSArray *movies = [[MovieModel new] setupListWithJson:searchList];
+                    
+                    if ( success )
+                        success( movies );
+                    
+                } else {
+                    
+                    if ( success )
+                        success( nil );
+                    
+                }
+
+            } else {
+                
+                if ( failure ) {
+                    
+                    NSError *error = [Error errorWithResponseData:responseData];
+                    
+                    failure( NO, error );
+                    
+                }
+                
             }
-            return;
+            
         }
-        
-        NSArray *movies = [[MovieModel new] setupListWithJson:result];
-        
-        if ( success )
-            success( movies );
         
     } failure:^(BOOL hasNoConnection, NSError *error) {
         

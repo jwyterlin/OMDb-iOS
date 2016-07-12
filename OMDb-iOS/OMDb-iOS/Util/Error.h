@@ -1,5 +1,5 @@
 //
-//  GenericService.h
+//  Error.h
 //  OMDb-iOS
 //
 //  Created by Jhonathan Wyterlin on 11/07/16.
@@ -8,11 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-// Util
-#import "Connection.h"
-#import "Error.h"
-#import "Routes.h"
+@interface Error : NSObject
 
-@interface GenericService : NSObject
++(NSError *)errorWithResponseData:(id)responseData;
 
 @end

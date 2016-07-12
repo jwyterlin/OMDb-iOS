@@ -33,7 +33,7 @@
     
     [self setupCollectionView];
     
-    [[MovieService new] searchMovieWithTitle:@"The" success:^(NSArray<MovieModel *> *movies) {
+    [[MovieService new] searchMovieWithTitle:@"The Lord of the Rings" success:^(NSArray<MovieModel *> *movies) {
         
     } failure:^(BOOL hasNoConnection, NSError *error) {
         

@@ -15,6 +15,4 @@
 +(NSString *)BASE_URL_API_GET;
 +(NSString *)BASE_URL_API_POST;
 
-+(NSString *)WS_SOME;
-
 @end

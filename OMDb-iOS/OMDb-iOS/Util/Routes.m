@@ -34,10 +34,4 @@
     
 }
 
-+(NSString *)WS_SOME {
-    
-    return @"some/path";
-    
-}
-
 @end
