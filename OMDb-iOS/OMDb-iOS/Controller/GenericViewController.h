@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 // Util
+#import "Alert.h"
 #import "Constants.h"
 
 @interface GenericViewController : UIViewController

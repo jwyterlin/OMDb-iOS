@@ -18,7 +18,7 @@
 
 #ifndef TEST
 @property(nonatomic,strong) UICollectionView *collectionView;
-@property(nonatomic,strong) NSArray *movies;
+@property(nonatomic,strong) NSArray<MovieModel *> *movies;
 #endif
 
 @end
@@ -33,12 +33,6 @@
     
     [self setupCollectionView];
     
-    [[MovieService new] searchMovieWithTitle:@"The Lord of the Rings" success:^(NSArray<MovieModel *> *movies) {
-        
-    } failure:^(BOOL hasNoConnection, NSError *error) {
-        
-    }];
-    
 }
 
 -(void)viewWillAppear:(BOOL)animated {
@@ -46,6 +40,32 @@
     [super viewWillAppear:animated];
     
     self.navigationItem.title = @"Movies";
+    
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+    
+    [super viewDidAppear:animated];
+    
+    [[MovieService new] searchMovieWithTitle:@"The Lord of the Rings" success:^(NSArray<MovieModel *> *movies) {
+        
+        self.movies = movies;
+        
+        [self.collectionView reloadData];
+        
+    } failure:^(BOOL hasNoConnection, NSError *error) {
+        
+        if ( hasNoConnection ) {
+            [[Alert new] showNoConnectionWithViewController:self];
+            return;
+        }
+        
+        if ( error ) {
+            [[Alert new] showError:error viewController:self];
+            return;
+        }
+        
+    }];
     
 }
 

@@ -58,6 +58,9 @@
 		7BFDBCD21D346D410004416C /* Error.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDBCD11D346D410004416C /* Error.m */; };
 		7BFDBCD31D346D410004416C /* Error.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDBCD11D346D410004416C /* Error.m */; };
 		7BFDBCD41D346D410004416C /* Error.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDBCD11D346D410004416C /* Error.m */; };
+		7BFDBCD81D3471DD0004416C /* Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDBCD71D3471DD0004416C /* Alert.m */; };
+		7BFDBCD91D3471DD0004416C /* Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDBCD71D3471DD0004416C /* Alert.m */; };
+		7BFDBCDA1D3471DD0004416C /* Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDBCD71D3471DD0004416C /* Alert.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +132,8 @@
 		7BCD45EB1D2C91E1004EF134 /* Routes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Routes.m; path = Util/Routes.m; sourceTree = "<group>"; };
 		7BFDBCD01D346D410004416C /* Error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Error.h; path = Util/Error.h; sourceTree = "<group>"; };
 		7BFDBCD11D346D410004416C /* Error.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Error.m; path = Util/Error.m; sourceTree = "<group>"; };
+		7BFDBCD61D3471DD0004416C /* Alert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Alert.h; path = Util/Alert.h; sourceTree = "<group>"; };
+		7BFDBCD71D3471DD0004416C /* Alert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Alert.m; path = Util/Alert.m; sourceTree = "<group>"; };
 		EE6D37A857FAB1554E370F21 /* libPods-OMDb-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OMDb-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -336,9 +341,10 @@
 		7B332A371D29831100D76A10 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				7BFDBCCF1D346D250004416C /* Error */,
+				7BFDBCD51D3471D00004416C /* Alert */,
 				7BCD45DD1D2C90E9004EF134 /* Connection */,
 				7B332A3C1D29840200D76A10 /* Constants */,
+				7BFDBCCF1D346D250004416C /* Error */,
 				7BCD45E31D2C9122004EF134 /* NetAPIClient */,
 				7BCD45E91D2C91D2004EF134 /* Routes */,
 				7B05C23A1D33E9F6000ADE2B /* Validator */,
@@ -486,6 +492,15 @@
 				7BFDBCD11D346D410004416C /* Error.m */,
 			);
 			name = Error;
+			sourceTree = "<group>";
+		};
+		7BFDBCD51D3471D00004416C /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				7BFDBCD61D3471DD0004416C /* Alert.h */,
+				7BFDBCD71D3471DD0004416C /* Alert.m */,
+			);
+			name = Alert;
 			sourceTree = "<group>";
 		};
 		C245FEA1C5B3A4182033BAB9 /* Frameworks */ = {
@@ -685,6 +700,7 @@
 				7B05C2311D33E055000ADE2B /* GenericService.m in Sources */,
 				7B332A2F1D296B4700D76A10 /* GenericViewController.m in Sources */,
 				7B332A691D29A20100D76A10 /* MovieModel.m in Sources */,
+				7BFDBCD81D3471DD0004416C /* Alert.m in Sources */,
 				7B332A551D2994F400D76A10 /* GenericCell.m in Sources */,
 				7B05C23D1D33EA08000ADE2B /* Validator.m in Sources */,
 				7B332A5A1D29950400D76A10 /* MovieCell.m in Sources */,
@@ -716,6 +732,7 @@
 				7B332A4A1D298D3900D76A10 /* GenericCellTests.m in Sources */,
 				7BCD45E71D2C913D004EF134 /* NetAPIClient.m in Sources */,
 				7B05C23E1D33EA08000ADE2B /* Validator.m in Sources */,
+				7BFDBCD91D3471DD0004416C /* Alert.m in Sources */,
 				7B332A5F1D29954800D76A10 /* MovieCellTests.m in Sources */,
 				7B332A5B1D29950400D76A10 /* MovieCell.m in Sources */,
 				7B332A361D296BB500D76A10 /* MoviesViewController.m in Sources */,
@@ -730,6 +747,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BFDBCDA1D3471DD0004416C /* Alert.m in Sources */,
 				7B332A141D2968EB00D76A10 /* OMDb_iOSUITests.m in Sources */,
 				7B05C23F1D33EA08000ADE2B /* Validator.m in Sources */,
 				7BCD45EE1D2C91E1004EF134 /* Routes.m in Sources */,
