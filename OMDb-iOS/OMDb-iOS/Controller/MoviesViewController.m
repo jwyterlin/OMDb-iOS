@@ -41,13 +41,17 @@
     
     self.navigationItem.title = @"Movies";
     
+    if ( ![self.collectionView isDescendantOfView:self.view] ) {
+        [self.view addSubview:self.collectionView];
+    }
+    
 }
 
 -(void)viewDidAppear:(BOOL)animated {
     
     [super viewDidAppear:animated];
     
-    //[self searchMovie];
+    [self getMovies];
     
 }
 
@@ -61,7 +65,9 @@
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    return [MovieCell new];
+    MovieModel *movie = self.movies[indexPath.row];
+    
+    return [[MovieCell new] cellAtIndexPath:indexPath collectionView:collectionView movie:movie];
     
 }
 
@@ -77,13 +83,19 @@
 
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    return CGSizeMake( 190.0f, 329.0f );
+    //return CGSizeMake( 190.0f, 329.0f );
+    return CGSizeMake( 173.0f, 245.0f );
     
 }
 
 -(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
     
-    return UIEdgeInsetsMake( 10.0f, 10.0f, 20.0f, 10.0f );
+    CGFloat top = 10.0f;
+    CGFloat left = 10.0f;
+    CGFloat bottom = 20.0f;
+    CGFloat right = 10.0f;
+    
+    return UIEdgeInsetsMake( top, left, bottom, right );
     
 }
 
@@ -96,7 +108,7 @@
     
 }
 
--(void)searchMovie {
+-(void)getMovies {
     
     [[MovieService new] searchMovieWithTitle:@"The Lord of the Rings" success:^(NSArray<MovieModel *> *movies) {
         
@@ -133,6 +145,9 @@
         
         UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake( x, y, width, heigh ) collectionViewLayout:layout];
+        _collectionView.dataSource = self;
+        _collectionView.delegate = self;
+        _collectionView.backgroundColor = [UIColor blackColor];
         
     }
     

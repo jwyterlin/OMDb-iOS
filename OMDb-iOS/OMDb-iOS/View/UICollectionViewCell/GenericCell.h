@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+// Util
+#import "Constants.h"
+
 @interface GenericCell : UICollectionViewCell
 
 @end
