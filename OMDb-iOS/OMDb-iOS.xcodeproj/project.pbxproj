@@ -61,6 +61,9 @@
 		7BFDBCD81D3471DD0004416C /* Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDBCD71D3471DD0004416C /* Alert.m */; };
 		7BFDBCD91D3471DD0004416C /* Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDBCD71D3471DD0004416C /* Alert.m */; };
 		7BFDBCDA1D3471DD0004416C /* Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDBCD71D3471DD0004416C /* Alert.m */; };
+		7BFDBCDF1D3728E80004416C /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDBCDE1D3728E80004416C /* DeviceInfo.m */; };
+		7BFDBCE01D3728E80004416C /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDBCDE1D3728E80004416C /* DeviceInfo.m */; };
+		7BFDBCE11D3728E80004416C /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDBCDE1D3728E80004416C /* DeviceInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,6 +137,8 @@
 		7BFDBCD11D346D410004416C /* Error.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Error.m; path = Util/Error.m; sourceTree = "<group>"; };
 		7BFDBCD61D3471DD0004416C /* Alert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Alert.h; path = Util/Alert.h; sourceTree = "<group>"; };
 		7BFDBCD71D3471DD0004416C /* Alert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Alert.m; path = Util/Alert.m; sourceTree = "<group>"; };
+		7BFDBCDD1D3728E80004416C /* DeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeviceInfo.h; path = Util/DeviceInfo.h; sourceTree = "<group>"; };
+		7BFDBCDE1D3728E80004416C /* DeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeviceInfo.m; path = Util/DeviceInfo.m; sourceTree = "<group>"; };
 		EE6D37A857FAB1554E370F21 /* libPods-OMDb-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OMDb-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -344,6 +349,7 @@
 				7BFDBCD51D3471D00004416C /* Alert */,
 				7BCD45DD1D2C90E9004EF134 /* Connection */,
 				7B332A3C1D29840200D76A10 /* Constants */,
+				7BFDBCDC1D3728D70004416C /* DeviceInfo */,
 				7BFDBCCF1D346D250004416C /* Error */,
 				7BCD45E31D2C9122004EF134 /* NetAPIClient */,
 				7BCD45E91D2C91D2004EF134 /* Routes */,
@@ -501,6 +507,15 @@
 				7BFDBCD71D3471DD0004416C /* Alert.m */,
 			);
 			name = Alert;
+			sourceTree = "<group>";
+		};
+		7BFDBCDC1D3728D70004416C /* DeviceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				7BFDBCDD1D3728E80004416C /* DeviceInfo.h */,
+				7BFDBCDE1D3728E80004416C /* DeviceInfo.m */,
+			);
+			name = DeviceInfo;
 			sourceTree = "<group>";
 		};
 		C245FEA1C5B3A4182033BAB9 /* Frameworks */ = {
@@ -709,6 +724,7 @@
 				7B3329F01D2968EA00D76A10 /* main.m in Sources */,
 				7BFDBCD21D346D410004416C /* Error.m in Sources */,
 				7BCD45EC1D2C91E1004EF134 /* Routes.m in Sources */,
+				7BFDBCDF1D3728E80004416C /* DeviceInfo.m in Sources */,
 				7B332A651D29A1EA00D76A10 /* GenericModel.m in Sources */,
 				7BCD45E01D2C9101004EF134 /* Connection.m in Sources */,
 			);
@@ -729,6 +745,7 @@
 				7B332A321D296B7300D76A10 /* GenericViewControllerTests.m in Sources */,
 				7B332A3F1D29843A00D76A10 /* ConstantTests.m in Sources */,
 				7B05C2381D33E071000ADE2B /* MovieService.m in Sources */,
+				7BFDBCE01D3728E80004416C /* DeviceInfo.m in Sources */,
 				7B332A4A1D298D3900D76A10 /* GenericCellTests.m in Sources */,
 				7BCD45E71D2C913D004EF134 /* NetAPIClient.m in Sources */,
 				7B05C23E1D33EA08000ADE2B /* Validator.m in Sources */,
@@ -754,6 +771,7 @@
 				7BCD45E21D2C9101004EF134 /* Connection.m in Sources */,
 				7BFDBCD41D346D410004416C /* Error.m in Sources */,
 				7B05C2331D33E055000ADE2B /* GenericService.m in Sources */,
+				7BFDBCE11D3728E80004416C /* DeviceInfo.m in Sources */,
 				7B05C2391D33E071000ADE2B /* MovieService.m in Sources */,
 				7BCD45E81D2C913D004EF134 /* NetAPIClient.m in Sources */,
 			);

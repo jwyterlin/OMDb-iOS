@@ -47,25 +47,7 @@
     
     [super viewDidAppear:animated];
     
-    [[MovieService new] searchMovieWithTitle:@"The Lord of the Rings" success:^(NSArray<MovieModel *> *movies) {
-        
-        self.movies = movies;
-        
-        [self.collectionView reloadData];
-        
-    } failure:^(BOOL hasNoConnection, NSError *error) {
-        
-        if ( hasNoConnection ) {
-            [[Alert new] showNoConnectionWithViewController:self];
-            return;
-        }
-        
-        if ( error ) {
-            [[Alert new] showError:error viewController:self];
-            return;
-        }
-        
-    }];
+    //[self searchMovie];
     
 }
 
@@ -114,6 +96,30 @@
     
 }
 
+-(void)searchMovie {
+    
+    [[MovieService new] searchMovieWithTitle:@"The Lord of the Rings" success:^(NSArray<MovieModel *> *movies) {
+        
+        self.movies = movies;
+        
+        [self.collectionView reloadData];
+        
+    } failure:^(BOOL hasNoConnection, NSError *error) {
+        
+        if ( hasNoConnection ) {
+            [[Alert new] showNoConnectionWithViewController:self];
+            return;
+        }
+        
+        if ( error ) {
+            [[Alert new] showError:error viewController:self];
+            return;
+        }
+        
+    }];
+    
+}
+
 #pragma mark - Lazy Instances 
 
 -(UICollectionView *)collectionView {
@@ -122,8 +128,8 @@
         
         CGFloat x = 0.0f;
         CGFloat y = 0.0f;
-        CGFloat width = [UIScreen mainScreen].bounds.size.width;
-        CGFloat heigh = [UIScreen mainScreen].bounds.size.height;
+        CGFloat width = [DeviceInfo width];
+        CGFloat heigh = [DeviceInfo height];
         
         UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake( x, y, width, heigh ) collectionViewLayout:layout];

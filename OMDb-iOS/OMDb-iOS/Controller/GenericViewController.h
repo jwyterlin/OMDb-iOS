@@ -11,6 +11,7 @@
 // Util
 #import "Alert.h"
 #import "Constants.h"
+#import "DeviceInfo.h"
 
 @interface GenericViewController : UIViewController
 
