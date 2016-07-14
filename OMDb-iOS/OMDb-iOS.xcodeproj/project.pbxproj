@@ -64,6 +64,14 @@
 		7BFDBCDF1D3728E80004416C /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDBCDE1D3728E80004416C /* DeviceInfo.m */; };
 		7BFDBCE01D3728E80004416C /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDBCDE1D3728E80004416C /* DeviceInfo.m */; };
 		7BFDBCE11D3728E80004416C /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDBCDE1D3728E80004416C /* DeviceInfo.m */; };
+		7BFDBCE51D373EE10004416C /* MovieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDBCE41D373EE10004416C /* MovieDetailViewController.m */; };
+		7BFDBCE61D373EE10004416C /* MovieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDBCE41D373EE10004416C /* MovieDetailViewController.m */; };
+		7BFDBCE71D373EE10004416C /* MovieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDBCE41D373EE10004416C /* MovieDetailViewController.m */; };
+		7BFDBCE91D373F040004416C /* MovieDetailViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDBCE81D373F040004416C /* MovieDetailViewControllerTests.m */; };
+		7BFDBCEA1D37405B0004416C /* GenericViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A2E1D296B4700D76A10 /* GenericViewController.m */; };
+		7BFDBCEB1D3740660004416C /* MovieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A681D29A20100D76A10 /* MovieModel.m */; };
+		7BFDBCEC1D37406F0004416C /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A391D29832800D76A10 /* Constants.m */; };
+		7BFDBCED1D3740840004416C /* GenericModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A641D29A1EA00D76A10 /* GenericModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +147,9 @@
 		7BFDBCD71D3471DD0004416C /* Alert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Alert.m; path = Util/Alert.m; sourceTree = "<group>"; };
 		7BFDBCDD1D3728E80004416C /* DeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeviceInfo.h; path = Util/DeviceInfo.h; sourceTree = "<group>"; };
 		7BFDBCDE1D3728E80004416C /* DeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeviceInfo.m; path = Util/DeviceInfo.m; sourceTree = "<group>"; };
+		7BFDBCE31D373EE10004416C /* MovieDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MovieDetailViewController.h; path = Controller/MovieDetailViewController.h; sourceTree = "<group>"; };
+		7BFDBCE41D373EE10004416C /* MovieDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MovieDetailViewController.m; path = Controller/MovieDetailViewController.m; sourceTree = "<group>"; };
+		7BFDBCE81D373F040004416C /* MovieDetailViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieDetailViewControllerTests.m; sourceTree = "<group>"; };
 		EE6D37A857FAB1554E370F21 /* libPods-OMDb-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OMDb-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -291,6 +302,7 @@
 		7B332A221D29697100D76A10 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7BFDBCE21D373EC20004416C /* MovieDetailViewController */,
 				7B332A2C1D296B2C00D76A10 /* GenericViewController */,
 				7B332A2B1D296B2000D76A10 /* MoviesViewController */,
 			);
@@ -338,6 +350,7 @@
 			isa = PBXGroup;
 			children = (
 				7B332A311D296B7300D76A10 /* GenericViewControllerTests.m */,
+				7BFDBCE81D373F040004416C /* MovieDetailViewControllerTests.m */,
 				7B332A331D296B8500D76A10 /* MoviesViewControllerTests.m */,
 			);
 			name = Controller;
@@ -516,6 +529,15 @@
 				7BFDBCDE1D3728E80004416C /* DeviceInfo.m */,
 			);
 			name = DeviceInfo;
+			sourceTree = "<group>";
+		};
+		7BFDBCE21D373EC20004416C /* MovieDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7BFDBCE31D373EE10004416C /* MovieDetailViewController.h */,
+				7BFDBCE41D373EE10004416C /* MovieDetailViewController.m */,
+			);
+			name = MovieDetailViewController;
 			sourceTree = "<group>";
 		};
 		C245FEA1C5B3A4182033BAB9 /* Frameworks */ = {
@@ -709,6 +731,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BFDBCE51D373EE10004416C /* MovieDetailViewController.m in Sources */,
 				7B332A3A1D29832800D76A10 /* Constants.m in Sources */,
 				7B332A271D296A2E00D76A10 /* AppDelegate.m in Sources */,
 				7B332A2A1D296A4000D76A10 /* MoviesViewController.m in Sources */,
@@ -734,12 +757,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BFDBCE61D373EE10004416C /* MovieDetailViewController.m in Sources */,
 				7BFDBCD31D346D410004416C /* Error.m in Sources */,
 				7B332A3B1D29832800D76A10 /* Constants.m in Sources */,
 				7B332A661D29A1EA00D76A10 /* GenericModel.m in Sources */,
 				7B332A6F1D29A22B00D76A10 /* MovieModelTests.m in Sources */,
 				7B332A341D296B8500D76A10 /* MoviesViewControllerTests.m in Sources */,
 				7B332A561D2994F400D76A10 /* GenericCell.m in Sources */,
+				7BFDBCE91D373F040004416C /* MovieDetailViewControllerTests.m in Sources */,
 				7B332A6A1D29A20100D76A10 /* MovieModel.m in Sources */,
 				7BCD45ED1D2C91E1004EF134 /* Routes.m in Sources */,
 				7B332A321D296B7300D76A10 /* GenericViewControllerTests.m in Sources */,
@@ -764,9 +789,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BFDBCEB1D3740660004416C /* MovieModel.m in Sources */,
 				7BFDBCDA1D3471DD0004416C /* Alert.m in Sources */,
 				7B332A141D2968EB00D76A10 /* OMDb_iOSUITests.m in Sources */,
+				7BFDBCEA1D37405B0004416C /* GenericViewController.m in Sources */,
 				7B05C23F1D33EA08000ADE2B /* Validator.m in Sources */,
+				7BFDBCEC1D37406F0004416C /* Constants.m in Sources */,
+				7BFDBCE71D373EE10004416C /* MovieDetailViewController.m in Sources */,
+				7BFDBCED1D3740840004416C /* GenericModel.m in Sources */,
 				7BCD45EE1D2C91E1004EF134 /* Routes.m in Sources */,
 				7BCD45E21D2C9101004EF134 /* Connection.m in Sources */,
 				7BFDBCD41D346D410004416C /* Error.m in Sources */,
@@ -922,6 +952,7 @@
 		};
 		7B332A1C1D2968EB00D76A10 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CB77CD21EE1547A82DFE4F8 /* Pods-OMDb-iOS.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -950,6 +981,7 @@
 		};
 		7B332A1F1D2968EB00D76A10 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CB77CD21EE1547A82DFE4F8 /* Pods-OMDb-iOS.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "OMDb-iOSUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

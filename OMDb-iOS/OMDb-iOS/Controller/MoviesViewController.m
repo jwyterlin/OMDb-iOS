@@ -83,7 +83,6 @@
 
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    //return CGSizeMake( 190.0f, 329.0f );
     return CGSizeMake( 173.0f, 245.0f );
     
 }
