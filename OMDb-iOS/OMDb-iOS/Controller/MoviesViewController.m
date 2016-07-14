@@ -14,6 +14,9 @@
 // Service
 #import "MovieService.h"
 
+// Controller
+#import "AddMovieViewController.h"
+
 @interface MoviesViewController()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 
 #ifndef TEST
@@ -32,6 +35,7 @@
     [super viewDidLoad];
     
     [self setupCollectionView];
+    [self setupAddButton];
     
 }
 
@@ -41,9 +45,8 @@
     
     self.navigationItem.title = @"Movies";
     
-    if ( ![self.collectionView isDescendantOfView:self.view] ) {
+    if ( ! [self.collectionView isDescendantOfView:self.view] )
         [self.view addSubview:self.collectionView];
-    }
     
 }
 
@@ -98,6 +101,14 @@
     
 }
 
+#pragma mark - IBAction methods
+
+-(IBAction)addButtonPressed:(UIBarButtonItem *)sender {
+    
+    [self callAddMovieViewController];
+    
+}
+
 #pragma mark - Private methods
 
 -(void)setupCollectionView {
@@ -128,6 +139,21 @@
         }
         
     }];
+    
+}
+
+-(void)setupAddButton {
+    
+    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addButtonPressed:)];
+    
+    self.navigationItem.rightBarButtonItem = addButton;
+    
+}
+
+-(void)callAddMovieViewController {
+    
+    AddMovieViewController *addMovieViewController = [AddMovieViewController new];
+    [self.navigationController pushViewController:addMovieViewController animated:YES];
     
 }
 
