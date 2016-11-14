@@ -50,6 +50,14 @@
     
 }
 
+-(void)viewWillDisappear:(BOOL)animated {
+    
+    [super viewWillDisappear:animated];
+    
+    self.navigationItem.title = @"";
+    
+}
+
 -(void)viewDidAppear:(BOOL)animated {
     
     [super viewDidAppear:animated];
