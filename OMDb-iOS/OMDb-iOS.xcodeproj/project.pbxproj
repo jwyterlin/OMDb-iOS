@@ -46,6 +46,9 @@
 		7B332A6A1D29A20100D76A10 /* MovieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A681D29A20100D76A10 /* MovieModel.m */; };
 		7B332A6D1D29A22100D76A10 /* GenericModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A6C1D29A22100D76A10 /* GenericModelTests.m */; };
 		7B332A6F1D29A22B00D76A10 /* MovieModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B332A6E1D29A22B00D76A10 /* MovieModelTests.m */; };
+		7B40874B1DDD3F640024A579 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B40874A1DDD3F640024A579 /* Localizable.strings */; };
+		7B40874C1DDD3F640024A579 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B40874A1DDD3F640024A579 /* Localizable.strings */; };
+		7B40874D1DDD3F640024A579 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B40874A1DDD3F640024A579 /* Localizable.strings */; };
 		7BCD45E01D2C9101004EF134 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCD45DF1D2C9101004EF134 /* Connection.m */; };
 		7BCD45E11D2C9101004EF134 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCD45DF1D2C9101004EF134 /* Connection.m */; };
 		7BCD45E21D2C9101004EF134 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCD45DF1D2C9101004EF134 /* Connection.m */; };
@@ -141,6 +144,7 @@
 		7B332A681D29A20100D76A10 /* MovieModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MovieModel.m; path = Model/MovieModel.m; sourceTree = "<group>"; };
 		7B332A6C1D29A22100D76A10 /* GenericModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericModelTests.m; sourceTree = "<group>"; };
 		7B332A6E1D29A22B00D76A10 /* MovieModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieModelTests.m; sourceTree = "<group>"; };
+		7B40874A1DDD3F640024A579 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Internacionalization/Localizable.strings; sourceTree = "<group>"; };
 		7BCD45DE1D2C9101004EF134 /* Connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Connection.h; path = Util/Connection.h; sourceTree = "<group>"; };
 		7BCD45DF1D2C9101004EF134 /* Connection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Connection.m; path = Util/Connection.m; sourceTree = "<group>"; };
 		7BCD45E41D2C913D004EF134 /* NetAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetAPIClient.h; path = Util/NetAPIClient.h; sourceTree = "<group>"; };
@@ -259,6 +263,7 @@
 		7B3329ED1D2968EA00D76A10 /* OMDb-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				7B4087491DDD3F3A0024A579 /* Internacionalization */,
 				7B332A211D29696400D76A10 /* AppDelegate */,
 				7BFDBCF41D3749800004416C /* Category */,
 				7B332A221D29697100D76A10 /* Controller */,
@@ -489,6 +494,14 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		7B4087491DDD3F3A0024A579 /* Internacionalization */ = {
+			isa = PBXGroup;
+			children = (
+				7B40874A1DDD3F640024A579 /* Localizable.strings */,
+			);
+			name = Internacionalization;
+			sourceTree = "<group>";
+		};
 		7BCD45DD1D2C90E9004EF134 /* Connection */ = {
 			isa = PBXGroup;
 			children = (
@@ -692,6 +705,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B40874B1DDD3F640024A579 /* Localizable.strings in Resources */,
 				7B3329FE1D2968EA00D76A10 /* LaunchScreen.storyboard in Resources */,
 				7B3329FB1D2968EA00D76A10 /* Assets.xcassets in Resources */,
 				7B3329F91D2968EA00D76A10 /* Main.storyboard in Resources */,
@@ -704,6 +718,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B332A5D1D29950400D76A10 /* MovieCell.xib in Resources */,
+				7B40874C1DDD3F640024A579 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -711,6 +726,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B40874D1DDD3F640024A579 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
