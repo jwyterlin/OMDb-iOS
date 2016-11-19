@@ -18,7 +18,7 @@
 
 @implementation MovieCell
 
--(MovieCell *)cellAtIndexPath:(NSIndexPath *)indexPath collectionView:(UICollectionView *)collectionView movie:(MovieModel *)movie {
++(MovieCell *)cellAtIndexPath:(NSIndexPath *)indexPath collectionView:(UICollectionView *)collectionView movie:(MovieModel *)movie {
     
     MovieCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:kNibNameMovieCell forIndexPath:indexPath];
     [self configureCell:cell movie:movie];
@@ -27,7 +27,7 @@
     
 }
 
--(void)configureCell:(MovieCell *)cell movie:(MovieModel *)movie {
++(void)configureCell:(MovieCell *)cell movie:(MovieModel *)movie {
     
     [cell configureImageWithPosterUrl:movie.urlPoster];
     

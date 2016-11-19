@@ -13,8 +13,8 @@
 
 @interface MovieCell : GenericCell
 
--(MovieCell *)cellAtIndexPath:(NSIndexPath *)indexPath collectionView:(UICollectionView *)collectionView movie:(MovieModel *)movie;
++(MovieCell *)cellAtIndexPath:(NSIndexPath *)indexPath collectionView:(UICollectionView *)collectionView movie:(MovieModel *)movie;
 
--(void)configureCell:(MovieCell *)cell movie:(MovieModel *)movie;
++(void)configureCell:(MovieCell *)cell movie:(MovieModel *)movie;
 
 @end

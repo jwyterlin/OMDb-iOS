@@ -11,17 +11,17 @@
 // Cell
 #import "MovieCell.h"
 
-// Service
-#import "MovieService.h"
-
 // Controller
 #import "AddMovieViewController.h"
 
-@interface MoviesViewController()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
+// Conductor
+#import "MoviesConductor.h"
+
+@interface MoviesViewController()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout,MoviesConductorDelegate>
 
 #ifndef TEST
 @property(nonatomic,strong) UICollectionView *collectionView;
-@property(nonatomic,strong) NSArray<MovieModel *> *movies;
+@property(nonatomic,strong) MoviesConductor *moviesConductor;
 #endif
 
 @end
@@ -62,7 +62,7 @@
     
     [super viewDidAppear:animated];
     
-    [self getMovies];
+    [self.moviesConductor viewDidAppear];
     
 }
 
@@ -70,15 +70,15 @@
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     
-    return self.movies.count;
+    return [self.moviesConductor numberOfMovies];
     
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    MovieModel *movie = self.movies[indexPath.row];
+    MovieModel *movie = [self.moviesConductor movieAtIndex:indexPath.row];
     
-    return [[MovieCell new] cellAtIndexPath:indexPath collectionView:collectionView movie:movie];
+    return [MovieCell cellAtIndexPath:indexPath collectionView:collectionView movie:movie];
     
 }
 
@@ -109,6 +109,20 @@
     
 }
 
+#pragma mark - MoviesConductorDelegate methods
+
+-(void)moviesConductorDelegate_updateList {
+    [self.collectionView reloadData];
+}
+
+-(void)moviesConductorDelegate_handleError:(NSError *)error {
+    [[Alert new] showError:error viewController:self];
+}
+
+-(void)moviesConductorDelegate_hasNoConnection {
+    [[Alert new] showNoConnectionWithViewController:self];
+}
+
 #pragma mark - IBAction methods
 
 -(IBAction)addButtonPressed:(UIBarButtonItem *)sender {
@@ -123,30 +137,6 @@
     
     UINib *nib = [UINib nibWithNibName:kNibNameMovieCell bundle:nil];
     [self.collectionView registerNib:nib forCellWithReuseIdentifier:kNibNameMovieCell];
-    
-}
-
--(void)getMovies {
-    
-    [[MovieService new] searchMovieWithTitle:@"The Lord of the Rings" success:^(NSArray<MovieModel *> *movies) {
-        
-        self.movies = movies;
-        
-        [self.collectionView reloadData];
-        
-    } failure:^(BOOL hasNoConnection, NSError *error) {
-        
-        if ( hasNoConnection ) {
-            [[Alert new] showNoConnectionWithViewController:self];
-            return;
-        }
-        
-        if ( error ) {
-            [[Alert new] showError:error viewController:self];
-            return;
-        }
-        
-    }];
     
 }
 
@@ -188,11 +178,16 @@
     
 }
 
--(NSArray *)movies {
+-(MoviesConductor *)moviesConductor {
     
-    if ( ! _movies )
-        _movies = [NSArray new];
-    return _movies;
+    if ( ! _moviesConductor ) {
+        
+        _moviesConductor = [MoviesConductor new];
+        _moviesConductor.delegateMoviesConductor = self;
+        
+    }
+    
+    return _moviesConductor;
     
 }
 

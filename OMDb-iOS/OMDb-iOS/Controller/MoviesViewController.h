@@ -9,15 +9,20 @@
 #import "GenericViewController.h"
 
 #ifdef TEST
+
 // Model
 #import "MovieModel.h"
+
+// Conductor
+#import "MoviesConductor.h"
+
 #endif
 
 @interface MoviesViewController : GenericViewController
 
 #ifdef TEST
 @property(nonatomic,strong) UICollectionView *collectionView;
-@property(nonatomic,strong) NSArray<MovieModel *> *movies;
+@property(nonatomic,strong) MoviesConductor *moviesConductor;
 #endif
 
 @end
