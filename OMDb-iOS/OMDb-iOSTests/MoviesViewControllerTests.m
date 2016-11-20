@@ -50,13 +50,4 @@
     
 }
 
--(void)testMoviesExists {
-    
-    MoviesViewController *moviesViewController = [MoviesViewController new];
-    [moviesViewController viewDidLoad];
-    
-    XCTAssert( moviesViewController.movies );
-    
-}
-
 @end
