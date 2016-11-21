@@ -53,6 +53,9 @@
 		7B40874B1DDD3F640024A579 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B40874A1DDD3F640024A579 /* Localizable.strings */; };
 		7B40874C1DDD3F640024A579 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B40874A1DDD3F640024A579 /* Localizable.strings */; };
 		7B40874D1DDD3F640024A579 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B40874A1DDD3F640024A579 /* Localizable.strings */; };
+		7B46F4931DE2793400F31435 /* AddMovieConductor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B46F4921DE2793400F31435 /* AddMovieConductor.m */; };
+		7B46F4941DE2793400F31435 /* AddMovieConductor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B46F4921DE2793400F31435 /* AddMovieConductor.m */; };
+		7B46F4951DE2793400F31435 /* AddMovieConductor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B46F4921DE2793400F31435 /* AddMovieConductor.m */; };
 		7BCD45E01D2C9101004EF134 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCD45DF1D2C9101004EF134 /* Connection.m */; };
 		7BCD45E11D2C9101004EF134 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCD45DF1D2C9101004EF134 /* Connection.m */; };
 		7BCD45E21D2C9101004EF134 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCD45DF1D2C9101004EF134 /* Connection.m */; };
@@ -152,6 +155,8 @@
 		7B332A6C1D29A22100D76A10 /* GenericModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericModelTests.m; sourceTree = "<group>"; };
 		7B332A6E1D29A22B00D76A10 /* MovieModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieModelTests.m; sourceTree = "<group>"; };
 		7B40874A1DDD3F640024A579 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Internacionalization/Localizable.strings; sourceTree = "<group>"; };
+		7B46F4911DE2793400F31435 /* AddMovieConductor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddMovieConductor.h; path = Conductor/AddMovieConductor.h; sourceTree = "<group>"; };
+		7B46F4921DE2793400F31435 /* AddMovieConductor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddMovieConductor.m; path = Conductor/AddMovieConductor.m; sourceTree = "<group>"; };
 		7BCD45DE1D2C9101004EF134 /* Connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Connection.h; path = Util/Connection.h; sourceTree = "<group>"; };
 		7BCD45DF1D2C9101004EF134 /* Connection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Connection.m; path = Util/Connection.m; sourceTree = "<group>"; };
 		7BCD45E41D2C913D004EF134 /* NetAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetAPIClient.h; path = Util/NetAPIClient.h; sourceTree = "<group>"; };
@@ -248,6 +253,8 @@
 		7B0A08801DDFD23C00A64E76 /* Conductor */ = {
 			isa = PBXGroup;
 			children = (
+				7B46F4911DE2793400F31435 /* AddMovieConductor.h */,
+				7B46F4921DE2793400F31435 /* AddMovieConductor.m */,
 				7B0A08821DDFD26300A64E76 /* MoviesConductor.h */,
 				7B0A08831DDFD26300A64E76 /* MoviesConductor.m */,
 			);
@@ -818,6 +825,7 @@
 				7B05C2311D33E055000ADE2B /* GenericService.m in Sources */,
 				7B332A2F1D296B4700D76A10 /* GenericViewController.m in Sources */,
 				7B332A691D29A20100D76A10 /* MovieModel.m in Sources */,
+				7B46F4931DE2793400F31435 /* AddMovieConductor.m in Sources */,
 				7BFDBCD81D3471DD0004416C /* Alert.m in Sources */,
 				7B332A551D2994F400D76A10 /* GenericCell.m in Sources */,
 				7B05C23D1D33EA08000ADE2B /* Validator.m in Sources */,
@@ -860,6 +868,7 @@
 				7BCD45E71D2C913D004EF134 /* NetAPIClient.m in Sources */,
 				7B05C23E1D33EA08000ADE2B /* Validator.m in Sources */,
 				7BFDBCD91D3471DD0004416C /* Alert.m in Sources */,
+				7B46F4941DE2793400F31435 /* AddMovieConductor.m in Sources */,
 				7B332A5F1D29954800D76A10 /* MovieCellTests.m in Sources */,
 				7BFDBCF21D3747980004416C /* AddMovieViewController.m in Sources */,
 				7B332A5B1D29950400D76A10 /* MovieCell.m in Sources */,
@@ -890,6 +899,7 @@
 				7BFDBCD41D346D410004416C /* Error.m in Sources */,
 				7BFDBCF31D3747980004416C /* AddMovieViewController.m in Sources */,
 				7B05C2331D33E055000ADE2B /* GenericService.m in Sources */,
+				7B46F4951DE2793400F31435 /* AddMovieConductor.m in Sources */,
 				7BFDBCF91D3749A30004416C /* UIView+Helper.m in Sources */,
 				7BFDBCE11D3728E80004416C /* DeviceInfo.m in Sources */,
 				7B05C2391D33E071000ADE2B /* MovieService.m in Sources */,

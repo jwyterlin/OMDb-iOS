@@ -11,10 +11,14 @@
 // Category
 #import "UIView+Helper.h"
 
+// Conductor
+#import "AddMovieConductor.h"
+
 @interface AddMovieViewController()
 
 @property(nonatomic,strong) UITextField *tfMovieName;
 @property(nonatomic,strong) UIButton *createButton;
+@property(nonatomic,strong) AddMovieConductor *addMovieConductor;
 
 @end
 
@@ -40,6 +44,14 @@
         [self.view addSubview:self.tfMovieName];
         [self.view addSubview:self.createButton];
     }
+    
+}
+
+#pragma mark - IBAction methods
+
+-(IBAction)createButtonPressed:(id)sender {
+    
+    [self.addMovieConductor createMovie];
     
 }
 
@@ -82,10 +94,20 @@
         [_createButton setTitle:@"Create" forState:UIControlStateNormal];
         _createButton.backgroundColor = [UIColor colorWithRed:251.0f/255.0f green:188.0f/255.0f blue:5.0f/255.0f alpha:1.0f];
         [_createButton setTitleColor:[UIColor colorWithRed:45.0f/255.0f green:40.0f/255.0f blue:34.0f/255.0f alpha:1.0f] forState:UIControlStateNormal];
+        [_createButton addTarget:self action:@selector(createButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
         
     }
     
     return _createButton;
+    
+}
+
+-(AddMovieConductor *)addMovieConductor {
+    
+    if ( ! _addMovieConductor ) {
+        _addMovieConductor = [AddMovieConductor new];
+    }
+    return _addMovieConductor;
     
 }
 
