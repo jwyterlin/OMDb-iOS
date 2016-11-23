@@ -72,6 +72,7 @@
         _tfMovieName.borderStyle = UITextBorderStyleNone;
         _tfMovieName.backgroundColor = [UIColor whiteColor];
         _tfMovieName.placeholder = @"Type the name of the movie";
+        _tfMovieName.layer.sublayerTransform = CATransform3DMakeTranslation(5, 0, 0);
         
     }
     
