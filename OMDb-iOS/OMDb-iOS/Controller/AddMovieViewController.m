@@ -84,8 +84,8 @@
     
     if ( ! _createButton ) {
         
-        CGFloat y = self.tfMovieName.verticalSpace + 8.0f;
-        CGFloat width = 84.0f;
+        CGFloat y = self.tfMovieName.verticalSpace + 34.0f;
+        CGFloat width = 88.0f;
         CGFloat height = 44.0f;
         CGFloat x = [DeviceInfo width]/2 - width/2;
         
@@ -96,6 +96,7 @@
         _createButton.backgroundColor = [UIColor colorWithRed:251.0f/255.0f green:188.0f/255.0f blue:5.0f/255.0f alpha:1.0f];
         [_createButton setTitleColor:[UIColor colorWithRed:45.0f/255.0f green:40.0f/255.0f blue:34.0f/255.0f alpha:1.0f] forState:UIControlStateNormal];
         [_createButton addTarget:self action:@selector(createButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+        _createButton.layer.cornerRadius = 5.0f;
         
     }
     
