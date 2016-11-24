@@ -23,13 +23,12 @@
                  success:(void (^)(id responseData))success
                  failure:(void (^)(BOOL hasNoConnection, NSError *error))failure {
     
-    [self connectWithMethod:method requestSerializer:RequestSerializerHTTP url:url parameters:parameters  success:^(id responseData) {
-        if (success)
-            success(responseData);
-    } failure:^(BOOL hasNoConnection, NSError *error) {
-        if (failure)
-            failure(hasNoConnection,error);
-    }];
+    [self connectWithMethod:method
+          requestSerializer:RequestSerializerHTTP
+                        url:url
+                 parameters:parameters
+                    success:success
+                    failure:failure];
     
 }
 
@@ -70,31 +69,29 @@
         
     }
     
+    void (^successBlock)(NSURLSessionTask *, id) = ^(NSURLSessionTask *task, id responseObject) {
+        if ( success )
+            success( responseObject );
+    };
+    
+    void (^failureBlock)(NSURLSessionTask *, NSError *) = ^(NSURLSessionTask *operation, NSError *error) {
+        if ( failure )
+            failure( NO, error );
+    };
+    
     if ( method == RequestMethodGet ) {
     
         NSLog( @"url: %@%@",[[NetAPIClient sharedClientGet] baseURL], url );
         
         // Sents the GET to server and capture response object, giving back callbacks to consumer.
-        [[NetAPIClient sharedClientGet] GET:url parameters:parameters progress:nil success:^(NSURLSessionTask *task, id responseObject) {
-            if (success)
-                success(responseObject);
-        } failure:^(NSURLSessionTask *operation, NSError *error) {
-            if (failure)
-                failure(NO, error);
-        }];
+        [[NetAPIClient sharedClientGet] GET:url parameters:parameters progress:nil success:successBlock failure:failureBlock];
         
     } else if ( method == RequestMethodPost ) {
         
         NSLog( @"url: %@%@",[[NetAPIClient sharedClientPost] baseURL], url );
         
         // Sents the POST to server and capture response object, giving back callbacks to consumer.
-        [[NetAPIClient sharedClientPost] POST:url parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-            if (success)
-                success(responseObject);
-        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-            if (failure)
-                failure(NO, error);
-        }];
+        [[NetAPIClient sharedClientPost] POST:url parameters:parameters progress:nil success:successBlock failure:failureBlock];
         
     }
     
