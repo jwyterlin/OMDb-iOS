@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07E60EA1B006B04E77DCDFDC /* libPods-OMDb-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE6D37A857FAB1554E370F21 /* libPods-OMDb-iOS.a */; };
+		6526CCADBFCBE16644CE87E8 /* libPods-OMDb-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9823F4FEB204DC5B80781DEB /* libPods-OMDb-iOS.a */; };
 		7B05C2311D33E055000ADE2B /* GenericService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B05C2301D33E055000ADE2B /* GenericService.m */; };
 		7B05C2321D33E055000ADE2B /* GenericService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B05C2301D33E055000ADE2B /* GenericService.m */; };
 		7B05C2331D33E055000ADE2B /* GenericService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B05C2301D33E055000ADE2B /* GenericService.m */; };
@@ -65,6 +65,9 @@
 		7BCD45EC1D2C91E1004EF134 /* Routes.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCD45EB1D2C91E1004EF134 /* Routes.m */; };
 		7BCD45ED1D2C91E1004EF134 /* Routes.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCD45EB1D2C91E1004EF134 /* Routes.m */; };
 		7BCD45EE1D2C91E1004EF134 /* Routes.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCD45EB1D2C91E1004EF134 /* Routes.m */; };
+		7BE933751DE90C9400A6FE06 /* Reachability+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE933741DE90C9400A6FE06 /* Reachability+Helper.m */; };
+		7BE933761DE90C9400A6FE06 /* Reachability+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE933741DE90C9400A6FE06 /* Reachability+Helper.m */; };
+		7BE933771DE90C9400A6FE06 /* Reachability+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BE933741DE90C9400A6FE06 /* Reachability+Helper.m */; };
 		7BFDBCD21D346D410004416C /* Error.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDBCD11D346D410004416C /* Error.m */; };
 		7BFDBCD31D346D410004416C /* Error.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDBCD11D346D410004416C /* Error.m */; };
 		7BFDBCD41D346D410004416C /* Error.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFDBCD11D346D410004416C /* Error.m */; };
@@ -108,8 +111,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3ABE352B526BE72DE4C4E9F7 /* Pods-OMDb-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OMDb-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-OMDb-iOS/Pods-OMDb-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		5CB77CD21EE1547A82DFE4F8 /* Pods-OMDb-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OMDb-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OMDb-iOS/Pods-OMDb-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		7B05C22F1D33E055000ADE2B /* GenericService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GenericService.h; path = Service/GenericService.h; sourceTree = "<group>"; };
 		7B05C2301D33E055000ADE2B /* GenericService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GenericService.m; path = Service/GenericService.m; sourceTree = "<group>"; };
 		7B05C2351D33E071000ADE2B /* MovieService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MovieService.h; path = Service/MovieService.h; sourceTree = "<group>"; };
@@ -163,6 +164,8 @@
 		7BCD45E51D2C913D004EF134 /* NetAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetAPIClient.m; path = Util/NetAPIClient.m; sourceTree = "<group>"; };
 		7BCD45EA1D2C91E1004EF134 /* Routes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Routes.h; path = Util/Routes.h; sourceTree = "<group>"; };
 		7BCD45EB1D2C91E1004EF134 /* Routes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Routes.m; path = Util/Routes.m; sourceTree = "<group>"; };
+		7BE933731DE90C9400A6FE06 /* Reachability+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Reachability+Helper.h"; path = "Category/Reachability+Helper.h"; sourceTree = "<group>"; };
+		7BE933741DE90C9400A6FE06 /* Reachability+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Reachability+Helper.m"; path = "Category/Reachability+Helper.m"; sourceTree = "<group>"; };
 		7BFDBCD01D346D410004416C /* Error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Error.h; path = Util/Error.h; sourceTree = "<group>"; };
 		7BFDBCD11D346D410004416C /* Error.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Error.m; path = Util/Error.m; sourceTree = "<group>"; };
 		7BFDBCD61D3471DD0004416C /* Alert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Alert.h; path = Util/Alert.h; sourceTree = "<group>"; };
@@ -176,7 +179,9 @@
 		7BFDBCF01D3747980004416C /* AddMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddMovieViewController.m; path = Controller/AddMovieViewController.m; sourceTree = "<group>"; };
 		7BFDBCF51D3749A30004416C /* UIView+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Helper.h"; path = "Category/UIView+Helper.h"; sourceTree = "<group>"; };
 		7BFDBCF61D3749A30004416C /* UIView+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Helper.m"; path = "Category/UIView+Helper.m"; sourceTree = "<group>"; };
-		EE6D37A857FAB1554E370F21 /* libPods-OMDb-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OMDb-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9823F4FEB204DC5B80781DEB /* libPods-OMDb-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OMDb-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A449491B1DE36FD5001F7C09 /* Pods-OMDb-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OMDb-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OMDb-iOS/Pods-OMDb-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		AA044E8E58997779D78475AB /* Pods-OMDb-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OMDb-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-OMDb-iOS/Pods-OMDb-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,7 +189,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07E60EA1B006B04E77DCDFDC /* libPods-OMDb-iOS.a in Frameworks */,
+				6526CCADBFCBE16644CE87E8 /* libPods-OMDb-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,11 +210,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		312925CEFBF4D14F83185F27 /* Pods */ = {
+		139BE62A0BBA13B9046A530D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5CB77CD21EE1547A82DFE4F8 /* Pods-OMDb-iOS.debug.xcconfig */,
-				3ABE352B526BE72DE4C4E9F7 /* Pods-OMDb-iOS.release.xcconfig */,
+				9823F4FEB204DC5B80781DEB /* libPods-OMDb-iOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7834F5708F392F79C3764F0E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A449491B1DE36FD5001F7C09 /* Pods-OMDb-iOS.debug.xcconfig */,
+				AA044E8E58997779D78475AB /* Pods-OMDb-iOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -276,8 +289,8 @@
 				7B332A071D2968EA00D76A10 /* OMDb-iOSTests */,
 				7B332A121D2968EB00D76A10 /* OMDb-iOSUITests */,
 				7B3329EC1D2968EA00D76A10 /* Products */,
-				312925CEFBF4D14F83185F27 /* Pods */,
-				C245FEA1C5B3A4182033BAB9 /* Frameworks */,
+				7834F5708F392F79C3764F0E /* Pods */,
+				139BE62A0BBA13B9046A530D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -562,6 +575,15 @@
 			name = Routes;
 			sourceTree = "<group>";
 		};
+		7BE933721DE90C4F00A6FE06 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				7BE933731DE90C9400A6FE06 /* Reachability+Helper.h */,
+				7BE933741DE90C9400A6FE06 /* Reachability+Helper.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
 		7BFDBCCF1D346D250004416C /* Error */ = {
 			isa = PBXGroup;
 			children = (
@@ -610,6 +632,7 @@
 		7BFDBCF41D3749800004416C /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				7BE933721DE90C4F00A6FE06 /* Reachability */,
 				7BFDBCFA1D3749F70004416C /* UIView */,
 			);
 			name = Category;
@@ -624,14 +647,6 @@
 			name = UIView;
 			sourceTree = "<group>";
 		};
-		C245FEA1C5B3A4182033BAB9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				EE6D37A857FAB1554E370F21 /* libPods-OMDb-iOS.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -639,12 +654,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B332A181D2968EB00D76A10 /* Build configuration list for PBXNativeTarget "OMDb-iOS" */;
 			buildPhases = (
-				435B1DA0B74B153BE1408CB4 /* Check Pods Manifest.lock */,
+				1F5C0AA7FE091DBEDD581A7F /* [CP] Check Pods Manifest.lock */,
 				7B3329E71D2968EA00D76A10 /* Sources */,
 				7B3329E81D2968EA00D76A10 /* Frameworks */,
 				7B3329E91D2968EA00D76A10 /* Resources */,
-				B6274D867ACDDDEB5D3944FB /* Embed Pods Frameworks */,
-				465366DABC1FDE371768C7F0 /* Copy Pods Resources */,
+				5A765A22179391854A90F256 /* [CP] Embed Pods Frameworks */,
+				749CFEE0B211093023149B56 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -766,14 +781,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		435B1DA0B74B153BE1408CB4 /* Check Pods Manifest.lock */ = {
+		1F5C0AA7FE091DBEDD581A7F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -781,34 +796,34 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		465366DABC1FDE371768C7F0 /* Copy Pods Resources */ = {
+		5A765A22179391854A90F256 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OMDb-iOS/Pods-OMDb-iOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B6274D867ACDDDEB5D3944FB /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OMDb-iOS/Pods-OMDb-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		749CFEE0B211093023149B56 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OMDb-iOS/Pods-OMDb-iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -838,6 +853,7 @@
 				7B0A08841DDFD26300A64E76 /* MoviesConductor.m in Sources */,
 				7BCD45EC1D2C91E1004EF134 /* Routes.m in Sources */,
 				7BFDBCDF1D3728E80004416C /* DeviceInfo.m in Sources */,
+				7BE933751DE90C9400A6FE06 /* Reachability+Helper.m in Sources */,
 				7B332A651D29A1EA00D76A10 /* GenericModel.m in Sources */,
 				7BCD45E01D2C9101004EF134 /* Connection.m in Sources */,
 				7BFDBCF71D3749A30004416C /* UIView+Helper.m in Sources */,
@@ -871,6 +887,7 @@
 				7B46F4941DE2793400F31435 /* AddMovieConductor.m in Sources */,
 				7B332A5F1D29954800D76A10 /* MovieCellTests.m in Sources */,
 				7BFDBCF21D3747980004416C /* AddMovieViewController.m in Sources */,
+				7BE933761DE90C9400A6FE06 /* Reachability+Helper.m in Sources */,
 				7B332A5B1D29950400D76A10 /* MovieCell.m in Sources */,
 				7B332A361D296BB500D76A10 /* MoviesViewController.m in Sources */,
 				7B332A6D1D29A22100D76A10 /* GenericModelTests.m in Sources */,
@@ -885,6 +902,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BE933771DE90C9400A6FE06 /* Reachability+Helper.m in Sources */,
 				7BFDBCEB1D3740660004416C /* MovieModel.m in Sources */,
 				7BFDBCDA1D3471DD0004416C /* Alert.m in Sources */,
 				7B332A141D2968EB00D76A10 /* OMDb_iOSUITests.m in Sources */,
@@ -1032,7 +1050,7 @@
 		};
 		7B332A191D2968EB00D76A10 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5CB77CD21EE1547A82DFE4F8 /* Pods-OMDb-iOS.debug.xcconfig */;
+			baseConfigurationReference = A449491B1DE36FD5001F7C09 /* Pods-OMDb-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "OMDb-iOS/Info.plist";
@@ -1044,7 +1062,7 @@
 		};
 		7B332A1A1D2968EB00D76A10 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3ABE352B526BE72DE4C4E9F7 /* Pods-OMDb-iOS.release.xcconfig */;
+			baseConfigurationReference = AA044E8E58997779D78475AB /* Pods-OMDb-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "OMDb-iOS/Info.plist";
@@ -1056,7 +1074,6 @@
 		};
 		7B332A1C1D2968EB00D76A10 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5CB77CD21EE1547A82DFE4F8 /* Pods-OMDb-iOS.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1085,7 +1102,6 @@
 		};
 		7B332A1F1D2968EB00D76A10 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5CB77CD21EE1547A82DFE4F8 /* Pods-OMDb-iOS.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "OMDb-iOSUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

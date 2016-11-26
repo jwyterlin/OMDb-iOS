@@ -12,6 +12,9 @@
 #import "NetAPIClient.h"
 #import "Routes.h"
 
+// Category
+#import "Reachability+Helper.h"
+
 @implementation Connection
 
 #pragma mark - Public methods
@@ -39,7 +42,7 @@
                  success:(void (^)(id responseData))success
                  failure:(void (^)(BOOL hasNoConnection, NSError *error))failure {
     
-    if ( ! [self isNetworkReachable] ) {
+    if ( ! [Reachability isNetworkReachable] ) {
         
         NSLog(@"has no connection");
         
@@ -111,22 +114,6 @@
         if (completion)
             completion(-1);
     }];
-    
-}
-
-#pragma mark - Private methods
-
--(BOOL)isNetworkReachable {
-    
-    return YES;
-    
-//    [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
-//        NSLog( @"Reachability: %@", AFStringFromNetworkReachabilityStatus( status ) );
-//    }];
-//    
-//    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
-//    
-//    return [[AFNetworkReachabilityManager sharedManager] isReachable];
     
 }
 
