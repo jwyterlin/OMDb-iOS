@@ -56,6 +56,7 @@
 		7B46F4931DE2793400F31435 /* AddMovieConductor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B46F4921DE2793400F31435 /* AddMovieConductor.m */; };
 		7B46F4941DE2793400F31435 /* AddMovieConductor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B46F4921DE2793400F31435 /* AddMovieConductor.m */; };
 		7B46F4951DE2793400F31435 /* AddMovieConductor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B46F4921DE2793400F31435 /* AddMovieConductor.m */; };
+		7B85892A1DEBC4FB00C163F7 /* AddMovieConductorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B8589291DEBC4FB00C163F7 /* AddMovieConductorTests.m */; };
 		7BCD45E01D2C9101004EF134 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCD45DF1D2C9101004EF134 /* Connection.m */; };
 		7BCD45E11D2C9101004EF134 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCD45DF1D2C9101004EF134 /* Connection.m */; };
 		7BCD45E21D2C9101004EF134 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BCD45DF1D2C9101004EF134 /* Connection.m */; };
@@ -158,6 +159,7 @@
 		7B40874A1DDD3F640024A579 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Internacionalization/Localizable.strings; sourceTree = "<group>"; };
 		7B46F4911DE2793400F31435 /* AddMovieConductor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddMovieConductor.h; path = Conductor/AddMovieConductor.h; sourceTree = "<group>"; };
 		7B46F4921DE2793400F31435 /* AddMovieConductor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddMovieConductor.m; path = Conductor/AddMovieConductor.m; sourceTree = "<group>"; };
+		7B8589291DEBC4FB00C163F7 /* AddMovieConductorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMovieConductorTests.m; sourceTree = "<group>"; };
 		7BCD45DE1D2C9101004EF134 /* Connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Connection.h; path = Util/Connection.h; sourceTree = "<group>"; };
 		7BCD45DF1D2C9101004EF134 /* Connection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Connection.m; path = Util/Connection.m; sourceTree = "<group>"; };
 		7BCD45E41D2C913D004EF134 /* NetAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetAPIClient.h; path = Util/NetAPIClient.h; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				7B26E3211DE136640051CBFD /* MoviesConductorTests.m */,
+				7B8589291DEBC4FB00C163F7 /* AddMovieConductorTests.m */,
 			);
 			name = Conductor;
 			sourceTree = "<group>";
@@ -864,6 +867,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B85892A1DEBC4FB00C163F7 /* AddMovieConductorTests.m in Sources */,
 				7B0A08851DDFD26300A64E76 /* MoviesConductor.m in Sources */,
 				7BFDBCE61D373EE10004416C /* MovieDetailViewController.m in Sources */,
 				7BFDBCD31D346D410004416C /* Error.m in Sources */,
