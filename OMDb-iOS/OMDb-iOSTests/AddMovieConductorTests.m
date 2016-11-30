@@ -41,4 +41,12 @@
     
 }
 
+-(void)testCreateMovie {
+    
+    AddMovieConductor *addMovieConductor = [AddMovieConductor new];
+    
+    [addMovieConductor createMovie];
+    
+}
+
 @end
