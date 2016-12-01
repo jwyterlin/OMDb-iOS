@@ -13,6 +13,10 @@
 #pragma mark - Public methods
 
 -(void)createMovie {
+    
+    // TODO: Validate movie name typed
+    // TODO: If it's valid, call a method to create the movie in the server
+    
 }
 
 @end
