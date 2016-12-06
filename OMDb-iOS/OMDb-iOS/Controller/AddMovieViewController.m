@@ -51,7 +51,7 @@
 
 -(IBAction)createButtonPressed:(id)sender {
     
-    [self.addMovieConductor createMovie];
+    [self.addMovieConductor createMovie:self.tfMovieName.text];
     
 }
 

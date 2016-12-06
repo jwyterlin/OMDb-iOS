@@ -10,6 +10,6 @@
 
 @interface AddMovieConductor : NSObject
 
--(void)createMovie;
+-(void)createMovie:(NSString *)movieName;
 
 @end
